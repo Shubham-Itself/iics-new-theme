@@ -625,6 +625,11 @@ header.main-header .header-sticky.active {
   text-align: center;
   margin: 0 20px;
 }
+@media screen and (max-width:991px) {
+  .main-menu{
+    display: none;
+  }
+}
 
 .main-menu .nav-menu-wrapper > ul {
   align-items: center;
