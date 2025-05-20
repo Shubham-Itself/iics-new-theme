@@ -80,6 +80,7 @@
 @supports (mix-blend-mode: exclusion) {
 	.cb-cursor.-exclusion, .cb-cursor.-opaque {
 		mix-blend-mode: exclusion;
+		/* mix-blend-mode:hard-light; */
 	}
 }
 

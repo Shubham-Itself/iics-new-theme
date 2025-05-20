@@ -51,7 +51,7 @@
   --primary-color: #000000;
   --secondary-color: #fafafa;
   --text-color: #666666;
-  --accent-color: #6a52e0;
+  --accent-color: #6C63FF;
   --accent-secondary-color: #dcfd7d;
   --iics-red-color: #e94235;
 
@@ -253,8 +253,8 @@ body {
   right: 10px;
   width: 34px;
   height: 34px;
-  background-color: var(--accent-secondary-color);
-  background-image: url("../images/arrow-primary.svg");
+  background-color: var(--accent-color);
+  background-image: url("../images/arrow-white.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 20px auto;
@@ -264,7 +264,7 @@ body {
 }
 
 .btn-default:hover::before {
-  background-color: #C0392B;
+  background-color: var(--primary-color);
 }
 
 .btn-default::after {
@@ -275,7 +275,7 @@ body {
   bottom: 0;
   width: 0;
   height: 100%;
-  background: var(--primary-color);
+  background: var(--accent-color);
   z-index: -1;
   transition: all 0.4s ease-in-out;
 }
@@ -287,12 +287,12 @@ body {
 }
 
 .btn-default.btn-highlighted {
-  background: #dd4041;
+  background: var(--accent-color);
   color: #fff;
 }
 
 .btn-default.btn-highlighted::before {
-  background-color: #2C3E50;
+  background-color: var(--accent-color);
   background-image: url("../images/arrow-white.svg");
 }
 
@@ -301,7 +301,7 @@ body {
 }
 
 .btn-default.btn-highlighted::after {
-  background-color: #C0392B;
+  background-color: var(--accent-color);
 }
 
 .readmore-btn {
@@ -432,12 +432,14 @@ body {
   left: 0;
   width: 6px;
   height: 6px;
-  background: var(--accent-secondary-color);
+  background: var(--accent-color);
   border-radius: 50%;
   transform: translateY(-50%);
 }
 
 .section-title h1 {
+  color: #FFFFFF;
+    text-shadow: 10px 4px 4px rgba(0, 0, 0, 0.4);
   font-size: 80px;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -467,6 +469,10 @@ body {
 .dark-section .section-title h2,
 .dark-section .section-title p {
   color: var(--white-color);
+}
+.dark-section .section-title h3{
+  color: #F9F9F9;
+  text-shadow: 10px 4px 4px rgba(0, 0, 0, 0.4);
 }
 
 .dark-section .section-title h1 span,
@@ -1012,6 +1018,12 @@ header.main-header .header-sticky.active {
   color: var(--white-color);
   line-height: 1.5em;
   padding-left: 30px;
+  text-shadow: 10px 4px 4px rgba(0, 0, 0, 0.4);
+
+}
+.text-anime-style-2{
+  text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.4);
+
 }
 
 .hero-body ul li:before {
@@ -1020,7 +1032,7 @@ header.main-header .header-sticky.active {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   font-size: 20px;
-  color: var(--accent-secondary-color);
+  color: var(--accent-color);
   top: 0px;
   left: 0;
 }
@@ -2687,6 +2699,19 @@ header.main-header .header-sticky.active {
   transition: all 0.3s ease-in-out;
 }
 
+/* .no-tailwind {
+  all: initial; 
+  font-family: Arial, sans-serif;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+} */
+.collapse{
+  visibility: visible !important;
+}
+
+
 .faq-accordion .accordion-header .accordion-button.collapsed {
   color: var(--primary-color);
   background: transparent;
@@ -3126,9 +3151,16 @@ header.main-header .header-sticky.active {
   left: 0;
   width: 100%;
   height: 0;
-  background: var(--accent-secondary-color);
+  background: var(--accent-color);
   z-index: 0;
   transition: all 0.4s ease-in-out;
+}
+
+.mission-vision-item:hover .mission-vision-item-content h3  {
+  color: #fff;
+}
+.mission-vision-item:hover .mission-vision-item-content p  {
+  color: #fff;
 }
 
 .mission-vision-item:hover:before,
