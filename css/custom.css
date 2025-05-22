@@ -1378,6 +1378,16 @@ header.main-header .header-sticky.active {
   border-radius: 0;
 }
 
+.service-item:hover .service-coming-soon{
+  color: white !important;
+}
+
+.careerOutcomes{
+  width: calc(50% - 20px) !important;
+}
+
+
+
 .service-item .icon-box {
   position: relative;
   height: 50px;
@@ -1611,6 +1621,10 @@ header.main-header .header-sticky.active {
 .why-choose-item {
   position: relative;
   width: calc(50% - 60px);
+}
+.width-issue{
+  width: calc(25% - 60px) !important;
+
 }
 
 .why-choose-item::before {
@@ -2434,7 +2448,7 @@ header.main-header .header-sticky.active {
   background: var(--secondary-color);
   border-radius: 20px;
   margin-bottom: 30px;
-  padding: 40px;
+  padding: 25px;
 }
 
 .pricing-header {
