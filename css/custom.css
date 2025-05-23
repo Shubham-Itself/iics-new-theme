@@ -2749,7 +2749,7 @@ header.main-header .header-sticky.active {
   transform: rotate(-90deg);
   height: 24px;
   width: 24px;
-  background-color: var(--accent-secondary-color);
+  background-color: white;
   background-image: url("../images/arrow-primary.svg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -3069,11 +3069,25 @@ header.main-header .header-sticky.active {
 /************************************/
 
 .page-header {
-  background: url("../images/page-header-bg.svg"), var(--accent-color);
-  background-repeat: no-repeat;
+  background: url("../images/IICS/iics_image/main-collage.webp");
+  background-repeat: repeat;
   background-position: center center;
   background-size: 100% auto;
+  position: relative;
   padding: 80px 0;
+}
+.page-header::before {
+  content: "";
+  /* height: 280px; */
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+
+.page-header .container {
+  position: relative;
+  z-index: 2;
 }
 
 .page-header-box {
