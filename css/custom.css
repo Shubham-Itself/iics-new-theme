@@ -7313,3 +7313,63 @@ header.main-header .header-sticky.active {
 .radio-wrapper span {
   display: inline-block;
 }
+
+
+
+
+
+.button-container {
+  --background: #fefbff;
+  --inner-shadow: #9faef9;
+  --inner-outline: #34217d;
+  --inner-outline-bottom: #fafcfe;
+  --inner-outline-middle: #8880d5;
+  --inner-outline-outer-top: #fefcff;
+  --inner-outline-outer-bottom-1: #29107b;
+  --line-1: #8676c9;
+  --line-2: #5c69ca;
+  position: relative;
+  background: var(--background);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 14px;
+  padding: 0.4em 1em;
+  border-radius: 5px;
+  width: fit-content;
+  box-shadow: inset 0px 1px 8px 1px var(--inner-shadow),
+    0px 2px 0px 0px var(--inner-outline-bottom),
+    0px -2px 0px 0px var(--inner-outline),
+    -2px -2px 0px 0px var(--inner-outline),
+    2px -2px 0px 0px var(--inner-outline),
+    0px 0px 0px 6px var(--inner-outline-middle),
+    0px -2px 0px 7px var(--inner-outline-outer-top),
+    0px 4px 0px 7px var(--inner-outline-outer-bottom-1);
+}
+
+.button-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+
+.button-line-1 {
+  height: 0.2em;
+  width: 4em;
+  border-radius: 10em;
+  display: inline-block;
+  background: var(--line-1);
+}
+
+.button-line-2 {
+  height: 0.2em;
+  width: 3em;
+  border-radius: 10em;
+  display: inline-block;
+  background: var(--line-2);
+}
+
+/* .smoothbg{
+  background-size: cover;
+  background-position: center;
+  background-image: url(/images/IICS/iics_image/text-bg/smoothbg5.png);
+} */

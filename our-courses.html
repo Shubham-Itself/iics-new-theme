@@ -513,80 +513,42 @@
     <script src="js/function.js"></script>
     <script>
        const courses = [
-  {
-    title: "Performing Arts And Media Management",
-    image: "images/IICS/dummy.png",
-    mentorName: "Dr. (Hon) Amit Behl",
-    mentorImage: "images/IICS/iics_image/leaders/amit_behl.webp",
-    duration: "2 Years / 3 Years",
-    courseType: "Certificate / Degree",
-    routeLink: "performing-arts-and-media-management.html",
-  },
-  {
-    title: "Hair, Makeup & Prosthetics",
-    image: "images/IICS/dummy.png",
-    mentorName: "Ms. Yasmin Rodgers",
-    mentorImage: "images/IICS/iics_image/leaders/yasmin_rodgers.webp",
-    duration: "1 Year ",
-    courseType: "Certificate",
-    routeLink: "hair-makeup-and-prosthetics.html",
-  },
-  {
-    title: "Sound Recording And Sound Design",
-    image: "images/IICS/dummy.png",
-    mentorName: "Padma Shri Dr. Resul Pookutty",
-    mentorImage: "images/IICS/iics_image/leaders/rasul.webp",
-    duration: "2 Years / 3 Years",
-    courseType: "Certificate / Degree",
-    routeLink: "sound-recording-and-sound-design.html",
-  },
-  {
-    title: "3D Game Art",
-    image: "images/IICS/dummy.png",
-    mentorName: "Mr. Manvendra Shukul",
-    mentorImage: "images/IICS/iics_image/leaders/manvendar_shukul.webp",
-    duration: "2 Years / 3 Years",
-    courseType: "Certificate / Degree",
-    routeLink: "3d-game-art.html",
-  },
-  {
-    title: "Advance Gaming And Extended Reality (XR) Innovations",
-    image: "images/IICS/dummy.png",
-    mentorName: "Mr. Anand Jha",
-    mentorImage: "images/IICS/iics_image/leaders/anand_jha.webp",
-    duration: "2 Years / 3 Years",
-    courseType: "Certificate Degree",
-    routeLink: "advance-gaming-and-extended-reality-xr-innovations.html",
-  },
-  {
-    title: "Journalism, PR, Image Strategization & Brand Custodianship Program",
-    image: "images/IICS/dummy.png",
-    mentorName: "Dr. (Hon) Anusha Srinivasan Iyer",
-    mentorNameTwo: "Dr. (Hon) S Ramachandran",
-    mentorImage: "images/IICS/iics_image/leaders/anusha.webp",
-    mentorImageTwo: "images/IICS/iics_image/leaders/ramachandran.webp",
-    duration: "2 Years / 3 Years",
-    courseType: "Certificate / Degree",
-    routeLink: "journalism-pr-image-strategization-and-brand-custodianship-program.html",
-  },
-  {
-    title: "Events And Experiential Media",
-    image: "images/IICS/dummy.png",
-    mentorName: "Ms. Sushma Gaikwad",
-    mentorImage: "images/IICS/iics_image/leaders/susma.webp",
-    duration: "2 Years / 3 Years",
-    courseType: "Certificate / Degree",
-    routeLink: "events-and-experiential-media.html",
-  },
-  {
-    title: "Digital Content Creation",
-    image: "images/IICS/dummy.png",
-    mentorName: "Ms. Ketki Pandit",
-    mentorImage: "images/IICS/iics_image/leaders/ketki_pandit.webp",
-    duration: "2 Years / 3 Years",
-    courseType: "Certificate / Degree",
-    routeLink: "digital-content-creation.html",
-  },
+ 
+       {
+          title: "Bachelor of Design in Animation & Gaming",
+          image:
+            "images/IICS/iics_image/degree-course/bsc-animation-game-production.webp",
+          mentorName: "Dr. (Hon) Amit Behl",
+          mentorImage: "",
+          duration: "3-Year degree with exit options (Certificate after Year 1, Diploma after Year 2)",
+          courseType: "Certificate",
+          routeLink:'bachelor-of-design-in-animation-&-gaming.html'
+        },
+        {
+          title: "B.Sc. in Digital Content Creation & Media Production",
+          image: "images/IICS/iics_image/degree-course/bsc-digital-content.webp",
+          mentorName: "Ms. Yasmin Rodgers",
+          mentorImage: "images/IICS/iics_image/leaders/yasmin_rodgers.webp",
+          duration: "3-Year degree with exit options (Certificate after Year 1, Diploma after Year 2)",
+          courseType: "Certificate",
+
+        },
+        {
+          title: "B.Sc. in Sound Design & Music Video Production",
+          image: "images/IICS/iics_image/degree-course/bsc-sound-design.webp",
+          mentorName: "Padma Shri Dr. Resul Pookutty",
+          mentorImage: "images/IICS/iics_image/leaders/rasul.webp",
+          duration: "3-Year degree with exit options (Certificate after Year 1, Diploma after Year 2)",
+          courseType: "Certificate",
+        },
+        {
+          title: "BBA. in Event Planning & Management",
+          image: "images/IICS/iics_image/degree-course/bsc-event-management.webp",
+          mentorName: "Mr. Manvendra Shukul",
+          mentorImage: "images/IICS/iics_image/leaders/manvendar_shukul.webp",
+          duration: "3-Year degree with exit options (Certificate after Year 1, Diploma after Year 2)",
+          courseType: "Certificate",
+        },
 ];
         const mentorContainers = document.getElementById("chiefMentorContainer");
       
@@ -601,13 +563,13 @@
             <h3 class="!font-extrabold h-[66px]">${mentor.title}</h3>
           </div>
           <div class="pricing-body">
-            <p class="text-[18px] !mb-[1rem]">Chief Mentor</p>
-          <div class="h-[140px]">
-              <p class="flex items-center gap-[20px] text-[16px] font-semibold">
+            <p class="text-[18px] !mb-[1rem] hidden">Chief Mentor</p>
+          <div class="h-[140px] hidden">
+              <p class="flex items-center gap-[20px] text-[16px] font-semibold hidden">
               <img src="${mentor.mentorImage}" alt="" class="w-[50px] h-[50px] rounded-[50%]" />
               <span class="font-extrabold text-[#000]">${mentor.mentorName}</span>
             </p>
-            ${mentor.mentorNameTwo ? ` <p class="flex items-center gap-[20px] text-[16px] font-semibold">
+            ${mentor.mentorNameTwo ? ` <p class="flex items-center gap-[20px] text-[16px] font-semibold hidden">
               <img src="${mentor.mentorImageTwo}" alt="" class="w-[50px] h-[50px] rounded-[50%]" />
               <span class="font-extrabold text-[#000]">${mentor.mentorNameTwo}</span>
             </p>`:''}
