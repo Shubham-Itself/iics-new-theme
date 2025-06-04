@@ -678,7 +678,7 @@ header.main-header .header-sticky.active {
   position: absolute;
   left: 0;
   top: 100%;
-  background: var(--accent-secondary-color);
+  background: var(--accent-color);
   text-align: left;
   transition: all 0.3s ease-in-out;
 }
@@ -1395,7 +1395,7 @@ header.main-header .header-sticky.active {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--secondary-color);
+  /* background: var(--secondary-color); */
   border-radius: 50%;
   margin-bottom: 40px;
   transition: all 0.4s ease-in-out;
@@ -1404,7 +1404,8 @@ header.main-header .header-sticky.active {
 
 .service-item .icon-box img {
   width: 100%;
-  max-width: 28px;
+  max-width: 50px;
+  border-radius: 5px;
 }
 
 .service-item-content {
@@ -2875,7 +2876,7 @@ header.main-header .header-sticky.active {
 
 .footer-logo img {
   width: 100%;
-  max-width: 209px;
+  max-width: 300px;
 }
 
 .footer-social-links {
@@ -3193,6 +3194,9 @@ header.main-header .header-sticky.active {
   color: #fff;
 }
 .mission-vision-item:hover .mission-vision-item-content p  {
+  color: #fff;
+}
+.mission-vision-item:hover .mission-vision-item-content ul li {
   color: #fff;
 }
 
@@ -7289,4 +7293,23 @@ header.main-header .header-sticky.active {
 }
 .swipeAreaIICS {
   color: #dd4041 !important;
+}
+
+
+
+.radio-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.radio-wrapper input[type="radio"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.radio-wrapper span {
+  display: inline-block;
 }
