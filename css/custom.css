@@ -436,7 +436,7 @@ body {
   left: 0;
   width: 6px;
   height: 6px;
-  background: var(--accent-color);
+  background: #fff;
   border-radius: 50%;
   transform: translateY(-50%);
 }
@@ -1081,7 +1081,7 @@ header.main-header .header-sticky.active {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   font-size: 20px;
-  color: var(--accent-color);
+  color: #fff;
   top: 0px;
   left: 0;
 }
