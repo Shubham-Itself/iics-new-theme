@@ -6,7 +6,7 @@
 
 	/* Preloader Effect */
 	$window.on('load', function(){
-		$(".preloader").fadeOut(600);
+		$(".preloader").slideUp(600);
 	});
 
 	/* Sticky Header */	
@@ -343,3 +343,36 @@
 	/* Work Step List Active End */
 	
 })(jQuery);
+
+async function sendMessage() {
+	const userInput = document.getElementById("user-input");
+	const message = userInput.value.trim();
+	if (message === "") return;
+  
+	appendMessage("user", message);
+	userInput.value = "";
+  
+	try {
+	  const response = await fetch('http://localhost:3000/ask', {
+		method: "POST",
+		headers: {
+		  "Content-Type": "application/json"
+		},
+		body: JSON.stringify({ question: message })
+	  });
+  
+	  const data = await response.json();
+	  appendMessage("bot", data.answer);
+	} catch (err) {
+	  appendMessage("bot", "Error reaching server.");
+	}
+  }
+  
+  function appendMessage(sender, text) {
+	const chatBox = document.getElementById("chat-box");
+	const messageEl = document.createElement("div");
+	messageEl.className = `message ${sender}`;
+	messageEl.innerText = text;
+	chatBox.appendChild(messageEl);
+	chatBox.scrollTop = chatBox.scrollHeight;
+  }

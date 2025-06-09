@@ -355,7 +355,7 @@ body {
   right: 0;
   bottom: 0;
   z-index: 1000;
-  background: var(--accent-color);
+  background: #000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -365,9 +365,101 @@ body {
 .loading {
   height: 100px;
   position: relative;
-  width: 100px;
+  width: 400px;
   border-radius: 100%;
 }
+
+.chat-container {
+  width: 360px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chat-box {
+  height: 400px;
+  padding: 10px;
+  overflow-y: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.message {
+  margin: 10px 0;
+}
+
+.message.user {
+  text-align: right;
+  color: blue;
+}
+
+.message.bot {
+  text-align: left;
+  color: green;
+}
+
+.input-area {
+  display: flex;
+  padding: 10px;
+}
+
+.input-area .text-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-area .send-button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.slide-in-elliptic-bottom-fwd {
+	-webkit-animation: slide-in-elliptic-bottom-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-elliptic-bottom-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-elliptic-bottom-fwd {
+  0% {
+    -webkit-transform: translateY(600px) rotateX(30deg) scale(0);
+            transform: translateY(600px) rotateX(30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+            transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% -1400px;
+            transform-origin: 50% -1400px;
+    opacity: 1;
+  }
+}
+@keyframes slide-in-elliptic-bottom-fwd {
+  0% {
+    -webkit-transform: translateY(600px) rotateX(30deg) scale(0);
+            transform: translateY(600px) rotateX(30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+            transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% -1400px;
+            transform-origin: 50% -1400px;
+    opacity: 1;
+  }
+}
+
 
 .loading-container {
   margin: 40px auto;
@@ -436,7 +528,7 @@ body {
   left: 0;
   width: 6px;
   height: 6px;
-  background: #fff;
+  background: transparent;
   border-radius: 50%;
   transform: translateY(-50%);
 }
@@ -3290,7 +3382,7 @@ header.main-header .header-sticky.active {
   border-bottom: none;
 }
 
-.mission-vision-item:before {
+/* .mission-vision-item:before {
   content: "";
   position: absolute;
   top: 0;
@@ -3302,9 +3394,9 @@ header.main-header .header-sticky.active {
   background: var(--accent-color);
   z-index: 0;
   transition: all 0.4s ease-in-out;
-}
+} */
 
-.mission-vision-item:hover .mission-vision-item-content h3  {
+/* .mission-vision-item:hover .mission-vision-item-content h3  {
   color: #fff;
 }
 .mission-vision-item:hover .mission-vision-item-content p  {
@@ -3312,7 +3404,7 @@ header.main-header .header-sticky.active {
 }
 .mission-vision-item:hover .mission-vision-item-content ul li {
   color: #fff;
-}
+} */
 
 .mission-vision-item:hover:before,
 .mission-vision-item.active:before {
@@ -7505,7 +7597,17 @@ header.main-header .header-sticky.active {
 .smoothbg{
   background-size: cover;
   background-position: center;
-  background-image: url(/images/IICS/iics_image/text-bg/smoothbg5.png);
+  background-image: url(/images/IICS/iics_image/text-bg/smoothbg7.png);
+}
+.eventbg{
+  background-size: cover;
+  background-position: center;
+  background-image: url(/images/IICS/iics_image/text-bg/smoothbg8.png);
+}
+.smoothbgseven{
+  background-size: cover;
+  background-position: center;
+  background-image: url(/images/IICS/iics_image/text-bg/smoothbg7.png);
 }
 .smoothbgLarge{
   background-size: cover;
