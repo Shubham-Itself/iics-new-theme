@@ -562,7 +562,7 @@ body {
 }
 
 .section-title h2 {
-  font-size: 46px;
+  font-size: 36px;
   letter-spacing: -0.02em;
   margin-bottom: 0;
   cursor: none;
@@ -1307,13 +1307,16 @@ header.main-header .header-sticky.active {
 .successful-circle-img {
   margin-bottom: 20px;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .successful-circle-img img {
   width: 100%;
   max-width: 170px;
   border-radius: 50%;
-  animation: infiniterotate 20s infinite linear;
+  
+  /* animation: infiniterotate 20s infinite linear; */
 }
 
 @keyframes infiniterotate {
