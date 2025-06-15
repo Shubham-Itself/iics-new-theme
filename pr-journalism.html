@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Awaiken">
+	<!-- Page Title -->
+     <title>IICS - Indian Institute Of Creative Skills</title>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/IICS/iics_image/logoonWeb.png" />
+	<!-- Google Fonts Css-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<!-- Bootstrap Css -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<!-- SlickNav Css -->
+	<link href="css/slicknav.min.css" rel="stylesheet">
+	<!-- Swiper Css -->
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<!-- Font Awesome Icon Css-->
+	<link href="css/all.min.css" rel="stylesheet" media="screen">
+	<!-- Animated Css -->
+	<link href="css/animate.css" rel="stylesheet">
+    <!-- Magnific Popup Core Css File -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Mouse Cursor Css File -->
+	<link rel="stylesheet" href="css/mousecursor.css">
+	<!-- Main Custom Css -->
+	<link href="css/custom.css" rel="stylesheet" media="screen">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+
+    <!-- Preloader Start -->
+    <div class="preloader">
+      <div class="loading-container">
+        <!-- <div class="loading"></div> -->
+        <div id="loading-icon" class="w-[400px] !max-w-[400px] "><img class="!max-w-[400px] " src="images/IICS/iics_image/iics-logo-white-red.png" alt="" /></div>
+      </div>
+    </div>
+   <!-- Social Bar with Chatbot Button -->
+<div class="fixed z-50 top-[50%] right-0  py-2 px-2">
+  <div class="flex flex-col items-center gap-3">
+    <a href="https://www.facebook.com/IICSIndiaorg?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">  <img src="images/IICS/iics_image/creative-incubator/facbook.png"  class="w-[40px] box-shadow-img" alt=""></a>
+  <a href="https://www.instagram.com/iicsindiaorg/" target="_blank" rel="noopener noreferrer">
+    <img src="images/IICS/iics_image/creative-incubator/instagram.png" class="w-[40px] box-shadow-img" alt="">
+
+  </a>
+  <a href="https://www.youtube.com/@IICSIndiaorg" target="_blank" rel="noopener noreferrer">
+    <img src="images/IICS/iics_image/creative-incubator/youtube.png" class="w-[40px] box-shadow-img" alt="">
+  </a>
+    
+    
+    <!-- Chatbot Toggle Button -->
+     <img id="chatbot-toggle" src="images/IICS/iics_image/robot-img.png" class="w-[50px] !mt-[60px]" alt="">
+    <!-- <button  class="w-[40px] h-[40px] bg-white rounded-full flex items-center justify-center text-black font-bold">💬</button> -->
+  </div>
+</div>
+
+<!-- Chatbot Overlay -->
+<div id="chatbot-overlay" class="fixed inset-0 z-[1000] bg-black/70 hidden">
+  <div id="chatbot"
+    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded shadow-lg max-w-[400px] w-full"
+    onclick="event.stopPropagation()">
+    <div id="chat-window">
+      <div class="message bot mb-2">Hi, I’m Juno. Welcome to the Indian Institute of Creative Skills! How can I help you?</div>
+      <p class="mb-2">What you want to know?</p>
+      <div class="message bot" id="subject-buttons"></div>
+    </div>
+    <div id="input-area" class="mt-4 flex gap-2">
+      <input type="text" id="user-input" placeholder="Type your question..." class="flex-1 border p-2 rounded" />
+      <button id="send-btn" class="bg-blue-600 text-white px-4 py-2 rounded">Ask</button>
+    </div>
+  </div>
+</div>
+
+    <!-- Topbar Section Start -->
+    <div class="topbar !bg-[#F7F7F7]">
+      <div class="container !max-w-full">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-6">
+            <!-- Topbar Contact Information Start -->
+            <div class="topbar-contact-info">
+              <ul>
+                <li>
+                  <img
+                    src="images/IICS/iics_image/skill-logo-small.webp"
+                    alt=""
+                    class="h-[50px]"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="images/IICS/iics_image/nsdc-small.webp"
+                    alt=""
+                    class="h-[50px]"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="images/IICS/iics_image/mesc-logo-small.webp"
+                    alt=""
+                    class="h-[50px]"
+                  />
+                </li>
+              </ul>
+            </div>
+            <!-- Topbar Contact Information End -->
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <!-- Topbar Social Links Start -->
+            <div class="topbar-social-links">
+              <ul>
+                <li>info@iicsindia.org</li>
+                <li>+91 959-4949-959</li>
+                <li>
+                  <a href="https://www.instagram.com/iicsindiaorg/" style="color: #e1306c"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/IICSIndiaorg?mibextid=ZbWKwL" style="color: #1877f2"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/@IICSIndiaorg" style="color: #ff0000"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <!-- Topbar Social Links End -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar Section End -->
+
+    <!-- Header Start -->
+    <header class="main-header !bg-[#fff]">
+      <div class="header-sticky">
+        <nav class="navbar navbar-expand-lg !py-[10px]">
+          <div class="container !max-w-full">
+            <!-- Logo Start -->
+            <a class="navbar-brand" href="./">
+              <img
+                src="images/IICS/iics_image/iics_logo_main.webp"
+                alt="Logo"
+                class="w-[300px]"
+              />
+            </a>
+            <!-- Logo End -->
+
+            <!-- Main Menu Start -->
+            <div class="navbar-collapse main-menu">
+              <div class="nav-menu-wrapper">
+                <ul class="navbar-nav mr-auto" id="menu">
+                  <li class="nav-item submenu">
+                    <a class="nav-link !text-[#2C3E50] cursor-pointer">About IICS</a>
+                    <ul class="arrow-thing ">
+                      <li class="nav-item !text-[14px]">
+                        <a class="nav-link cursor-pointer !text-[14px] !flex justify-between items-center" href="about.html"
+                          >
+                          <span class="flex items-center gap-[5px]">
+                            <img src="./images/IICS/iics_image/listIcon/1.png" alt="" class="w-[18px]">
+                            About</span>
+                          <i class="fas fa-chevron-right text-[10px] ml-2 mt-[2px]"></i>
+                          </a
+                        >
+                        <ul class=" !w-[400px] !left-[103%]">
+                          <li class="nav-item">
+                            <a href="about.html" class="nav-link !text-[14px] !flex items-center gap-[5px]">
+                            <img src="./images/IICS/iics_image/listIcon/1.png" alt="" class="w-[18px]">
+
+                              About IICS
+                            </a>
+                          </li>
+                          <!-- <li class="nav-item">
+                            <a href="" class="nav-link !text-[14px] !flex items-start gap-[5px]">
+                            <img src="./images/IICS/iics_image/listIcon/5.png" alt="" class="w-[18px]">
+
+                              Message from Hon’ble Minister of State (Independent Charge)
+                            </a>
+                          </li> -->
+                          <li class="nav-item">
+                            <a href="message-from-the-chairman.html" class="nav-link !text-[14px] !flex items-start gap-[5px]">
+                              <img src="./images/IICS/iics_image/listIcon/5.png" alt="" class="w-[18px]">
+                              Message from the Chairman of Indian Institute of Creative Skills
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="message-from-secretary-msde.html" class="nav-link !text-[14px] !flex items-start gap-[5px]">
+                              <img src="./images/IICS/iics_image/listIcon/5.png" alt="" class="w-[18px]">
+                              Message from Secretary of the Ministry of Skill Development & Entrepreneurship
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="message-from-ceo-nsdc-&-managing-director-nsdci.html" class="nav-link !text-[14px] !flex items-start gap-[5px]">
+                              <img src="./images/IICS/iics_image/listIcon/5.png" alt="" class="w-[18px]">
+                              
+                              Message from CEO, NSDC & Managing Director, NSDC International (NSDCI)
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="management.html" class="nav-link !text-[14px] !flex items-center gap-[5px]">
+                              <img src="./images/IICS/iics_image/listIcon/6.png" alt="" class="w-[18px]">
+
+                              Management
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="about.html#stakeholder" class="nav-link !text-[14px] !flex items-center gap-[5px]">
+                              <img src="./images/IICS/iics_image/listIcon/7.png" alt="" class="w-[18px]">
+
+                              Stake Holders
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item !text-[14px]">
+                        <a class="nav-link !text-[14px] !flex items-center gap-[5px]" href="team.html"
+                          >
+                          <img src="./images/IICS/iics_image/listIcon/2.png" alt="" class="w-[18px]">
+                          Mentors</a
+                        >
+                      </li>
+                      <li class="nav-item !text-[14px]">
+                        <a class="nav-link !text-[14px] !flex items-center gap-[5px]" href="/#partners"
+                          >
+                          <img src="./images/IICS/iics_image/listIcon/3.png" alt="" class="w-[18px]">
+                          Partners</a
+                        >
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link !text-[14px]  !flex items-center gap-[5px]" href="/#campus""
+                          >
+                          <img src="./images/IICS/iics_image/listIcon/4.png" alt="" class="w-[18px]">
+                          Campus</a
+                        >
+                      </li>
+                      <!-- <li class="nav-item">
+                        <a
+                          class="nav-link !text-[#2C3E50]"
+                          href="blog-single.html"
+                          >Blog Details</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link !text-[#2C3E50]" href="projects.html"
+                          >Projects</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link !text-[#2C3E50]"
+                          href="project-single.html"
+                          >Project Details</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link !text-[#2C3E50]" href="team.html"
+                          >Team</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link !text-[#2C3E50]"
+                          href="team-single.html"
+                          >Team Details</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link !text-[#2C3E50]" href="pricing.html"
+                          >Pricing Plan</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link !text-[#2C3E50]"
+                          href="testimonials.html"
+                          >Testimonials</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link !text-[#2C3E50]"
+                          href="image-gallery.html"
+                          >Image Gallery</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link !text-[#2C3E50]"
+                          href="video-gallery.html"
+                          >Video Gallery</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link !text-[#2C3E50]" href="faqs.html"
+                          >FAQs</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link !text-[#2C3E50]" href="404.html"
+                          >404</a
+                        >
+                      </li> -->
+                    </ul>
+                  </li>
+                  <li class="nav-item submenu">
+                    <a class="nav-link !text-[#2C3E50]" href="services.html"
+                      >Programs</a
+                    >
+                    <ul class="arrow-thing !left-[-56px]">
+                      <li class="nav-item !text-[14px]">
+                        <a class="nav-link cursor-pointer !text-[14px] !flex justify-between items-center" href="about.html"
+                          >
+                          <span class="flex items-center gap-[5px]">
+                            <img src="./images/IICS/iics_image/listIcon/014.png" alt="" class="w-[18px]">
+                            Degree</span>
+                          <i class="fas fa-chevron-right text-[10px] ml-2 mt-[2px]"></i>
+                          </a
+                        >
+                        <ul class=" !w-[400px] !left-[103%]">
+                          <li class="nav-item">
+                            <a href="bachelor-of-design-in-animation-&-gaming.html" class="nav-link !text-[14px] !flex items-center gap-[5px]">
+                            <img src="./images/IICS/iics_image/listIcon/016.png" alt="" class="w-[18px]">
+
+                            Bachelor of Design in Animation & Gaming
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="bsc-in-digital-content-creation-&-media-production.html" class="nav-link !text-[14px] !flex items-start gap-[5px]">
+                            <img src="./images/IICS/iics_image/listIcon/017.png" alt="" class="w-[18px]">
+
+                            B.Sc. in Digital Content Creation & Media Production
+
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="bsc-in-sound-design-&-music-video-production.html" class="nav-link !text-[14px] !flex items-start gap-[5px]">
+                              <img src="./images/IICS/iics_image/listIcon/018.png" alt="" class="w-[18px]">
+                              B.Sc. in Sound Design & Music Video Production
+
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="bba-in-event-planning-&-management.html" class="nav-link !text-[14px] !flex items-start gap-[5px]">
+                              <img src="./images/IICS/iics_image/listIcon/019.png" alt="" class="w-[18px]">
+                              BBA. in Event Planning & Management
+
+
+                            </a>
+                          </li>
+                          
+                        </ul>
+                      </li>
+                      <li class="nav-item !text-[14px]">
+                        <a class="nav-link !text-[14px] !flex items-center gap-[5px] justify-between" href="about.html"
+                          >
+                          <span class="flex items-center gap-[5px] ">
+                            <img src="./images/IICS/iics_image/listIcon/015.png" alt="" class="w-[18px]">
+                            Certificate</span>
+                          <i class="fas fa-chevron-right text-[10px] ml-2 mt-[2px]"></i>
+                         </a
+                        >
+                        <ul class=" !w-[400px] !left-[103%]">
+                          <li class="nav-item">
+                            <a href="hair-makeup-and-prosthetics.html" class="nav-link !text-[14px] !flex items-center gap-[5px]">
+                            <img src="./images/IICS/iics_image/listIcon/020.png" alt="" class="w-[18px]">
+
+                            Hair, Make Up & Prosthetics
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="costume-design.html" class="nav-link !text-[14px] !flex items-start gap-[5px]">
+                            <img src="./images/IICS/iics_image/listIcon/021.png" alt="" class="w-[18px]">
+
+                            Costume Design
+
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="pr-journalism.html" class="nav-link !text-[14px] !flex items-start gap-[5px]">
+                              <img src="./images/IICS/iics_image/listIcon/022.png" alt="" class="w-[18px]">
+                              PR & Journalism
+
+                            </a>
+                          </li>
+                          
+                          
+                        </ul>
+                      </li>
+                     
+                    
+                    </ul>
+                  </li>
+                  <li class="nav-item submenu">
+                    <a class="nav-link !text-[#2C3E50] " href="about.html"
+                      >Admissions</a
+                    >
+                    <ul class="arrow-thing !left-[-56px]">
+                      <li class="nav-item !text-[14px]">
+                        <a class="nav-link cursor-pointer !text-[14px] !flex justify-between items-center" href="#"
+                          >
+                          <span class="flex items-center gap-[5px]">
+                            <img src="./images/IICS/iics_image/listIcon/012.png" alt="" class="w-[18px]">
+                            Entrance Process</span>
+                          <i class="fas fa-chevron-right text-[10px] ml-2 mt-[2px]"></i>
+                          </a
+                        >
+                        <ul class=" !w-[400px] !left-[103%]">
+                          <li class="nav-item">
+                            <a href="admission-process.html" class="nav-link !text-[14px] !flex items-center gap-[5px]">
+                            <img src="./images/IICS/iics_image/listIcon/011.png" alt="" class="w-[18px]">
+
+                             How To Apply
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="admission-process.html#eligibilityCriteria" class="nav-link !text-[14px] !flex items-start gap-[5px]">
+                            <img src="./images/IICS/iics_image/listIcon/08.png" alt="" class="w-[18px]">
+
+                             Eligibility Criteria
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="" class="nav-link !text-[14px] !flex items-start gap-[5px]">
+                              <img src="./images/IICS/iics_image/listIcon/013.png" alt="" class="w-[18px]">
+                              Sample Papers
+                            </a>
+                          </li>
+                          
+                        </ul>
+                      </li>
+                      <li class="nav-item !text-[14px]">
+                        <a class="nav-link !text-[14px] !flex items-center gap-[5px]" href="public-notice.html"
+                          >
+                          <img src="./images/IICS/iics_image/listIcon/09.png" alt="" class="w-[18px]">
+                          Public Notice</a
+                        >
+                      </li>
+                      <li class="nav-item !text-[14px]">
+                        <a class="nav-link !text-[14px] !flex items-center gap-[5px]" href="about.html"
+                          >
+                          <img src="./images/IICS/iics_image/listIcon/010.png" alt="" class="w-[18px]">
+                          Prospectus</a
+                        >
+                      </li>
+                    
+                    </ul>
+                  </li>
+
+                  <li class="nav-item ">
+                    <a class="nav-link !text-[#2C3E50] " href="team.html"
+                      >Industry Connect</a
+                    >
+                   
+                  </li>
+                
+                  <li class="nav-item submenu">
+                    <a class="nav-link !text-[#2C3E50]" href="blog.html"
+                      >Media & Gallery
+                      
+                      </a
+                    >
+                    <ul class="arrow-thing !left-[-56px]">
+                      <li class="nav-item !text-[14px]">
+                        <a class="nav-link cursor-pointer !text-[14px] !flex justify-between items-center" href="event.html"
+                          >
+                          <span class="flex items-center gap-[5px]">
+                            <img src="./images/IICS/iics_image/listIcon/023.png" alt="" class="w-[18px]">
+                            Events & Workshop</span>
+                        
+                          </a
+                        >
+                       
+                      </li>
+                      <!-- <li class="nav-item !text-[14px]">
+                        <a class="nav-link cursor-pointer !text-[14px] !flex justify-between items-center" href="press-media.html"
+                          >
+                          <span class="flex items-center gap-[5px]">
+                            <img src="./images/IICS/iics_image/listIcon/024.png" alt="" class="w-[18px]">
+                            Press Media</span>
+                        
+                          </a
+                        >
+                       
+                      </li> -->
+                      <li class="nav-item !text-[14px]">
+                        <a class="nav-link cursor-pointer !text-[14px] !flex justify-between items-center" href="about.html"
+                          >
+                          <span class="flex items-center gap-[5px]">
+                            <img src="./images/IICS/iics_image/listIcon/025.png" alt="" class="w-[18px]">
+                            Infrastructure</span>
+                        
+                          </a
+                        >
+                       
+                      </li>
+                      <!-- <li class="nav-item !text-[14px]">
+                        <a class="nav-link cursor-pointer !text-[14px] !flex justify-between items-center" href="about.html"
+                          >
+                          <span class="flex items-center gap-[5px]">
+                            <img src="./images/IICS/iics_image/listIcon/026.png" alt="" class="w-[18px]">
+                            Career Pathways</span>
+                        
+                          </a
+                        >
+                       
+                      </li> -->
+                     
+                    
+                    </ul>
+                  </li>
+
+                  <li class="nav-item submenu hidden">
+                    <a class="nav-link !text-[#2C3E50]" href="blog.html"
+                      >Creative Incubators
+                      
+                      </a
+                    >
+                    <ul class="arrow-thing !left-[-56px]">
+                      <li class="nav-item !text-[14px]">
+                        <a class="nav-link cursor-pointer !text-[14px] !flex justify-between items-center" href="live-project.html"
+                          >
+                          <span class="flex items-center gap-[5px]">
+                            <img src="./images/IICS/iics_image/listIcon/027.png" alt="" class="w-[18px]">
+                            Live Projects</span>
+                        
+                          </a
+                        >
+                       
+                      </li>
+                      <li class="nav-item !text-[14px]">
+                        <a class="nav-link cursor-pointer !text-[14px] !flex justify-between items-center" href="apprenticeship.html"
+                          >
+                          <span class="flex items-center gap-[5px]">
+                            <img src="./images/IICS/iics_image/listIcon/028.png" alt="" class="w-[18px]">
+                            Apprenticeship</span>
+                        
+                          </a
+                        >
+                       
+                      </li>
+                      <li class="nav-item !text-[14px]">
+                        <a class="nav-link cursor-pointer !text-[14px] !flex justify-between items-center" href="startup-support.html"
+                          >
+                          <span class="flex items-center gap-[5px]">
+                            <img src="./images/IICS/iics_image/listIcon/029.png" alt="" class="w-[18px]">
+                            Startup Support</span>
+                        
+                          </a
+                        >
+                       
+                      </li>
+                      <li class="nav-item !text-[14px]">
+                        <a class="nav-link cursor-pointer !text-[14px] !flex justify-between items-center" href="portfolio-development.html"
+                          >
+                          <span class="flex items-center gap-[5px]">
+                            <img src="./images/IICS/iics_image/listIcon/030.png" alt="" class="w-[18px]">
+                            Portfolio Development</span>
+                        
+                          </a
+                        >
+                       
+                      </li>
+                      <li class="nav-item !text-[14px]">
+                        <a class="nav-link cursor-pointer !text-[14px] !flex justify-between items-center" href="industry-assosiates.html"
+                          >
+                          <span class="flex items-center gap-[5px]">
+                            <img src="./images/IICS/iics_image/listIcon/031.png" alt="" class="w-[18px]">
+                           Industry Associates</span>
+                        
+                          </a
+                        >
+                       
+                      </li>
+                      <!-- <li class="nav-item !text-[14px]">
+                        <a class="nav-link cursor-pointer !text-[14px] !flex justify-between items-center" href="about.html"
+                          >
+                          <span class="flex items-center gap-[5px]">
+                            <img src="./images/IICS/iics_image/listIcon/032.png" alt="" class="w-[18px]">
+                            Source Funding $ IP Creation</span>
+                        
+                          </a
+                        >
+                       
+                      </li> -->
+                      <li class="nav-item !text-[14px]">
+                        <a class="nav-link cursor-pointer !text-[14px] !flex justify-between items-center" href="about.html"
+                          >
+                          <span class="flex items-center gap-[5px]">
+                            <img src="./images/IICS/iics_image/listIcon/033.png" alt="" class="w-[18px]">
+                           Podcast</span>
+                        
+                          </a
+                        >
+                       
+                      </li>
+                     
+                    
+                    </ul>
+                  </li>
+                  
+                  
+                  <li class="nav-item">
+                    <a class="nav-link !text-[#2C3E50]" href="contact.html"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Header Btn Start -->
+              <div class="header-btn">
+                <a
+                  href="registration.html"
+                  class="btn-default btn-highlighted !text-[#fff]"
+                  >Register Now</a
+                >
+              </div>
+              <!-- Header Btn End -->
+            </div>
+            <!-- Main Menu End -->
+            <div class="navbar-toggle"></div>
+          </div>
+        </nav>
+        <div class="responsive-menu"></div>
+      </div>
+    </header>
+      <!-- Header End -->
+
+    <!-- Page Header Start -->
+    <div class="page-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <!-- Page Header Box Start -->
+                    <div class="page-header-box">
+                        <h1 class="text-anime-style-2 !text-[50px]" data-cursor="-opaque">Journalism, PR, Image Strategization <span class="!text-[#dd4041]">and Brand Custodianship</span></h1>
+                        <!-- <nav class="wow fadeInUp">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="./">home</a></li>
+                                <li class="breadcrumb-item"><a href="team.html">team</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">James mitchell</li>
+                            </ol>
+                        </nav> -->
+                    </div>
+                    <!-- Page Header Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Page Team Single Start -->
+    <div class="page-team-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <!-- Team Single Sidebar Start -->
+                    <div class="page-single-sidebar team-sidebar-box wow fadeInUp">
+                        <!-- Team Sidebar Image Start -->
+                        <div class="team-sidebar-image">
+                            <figure class="image-anime">
+                                <video
+                                src="https://res.cloudinary.com/dwgwz52rq/video/upload/v1745234851/gaming_rtkrc2.mp4"
+                                autoplay
+                                muted
+                                loop
+                                playsinline
+                              ></video>
+                              </figure>
+                        </div>
+                        <!-- Team Sidebar Image End -->
+
+                        <!-- Team Sidebar Body Start -->
+                        <div class="team-sidebar-body !bg-[#282525]">
+                            <h3>Course Included</h3>
+                            <div class="text-[#fff]">
+                                <!-- <div class="flex justify-between !mb-[10px]">
+                                  <span class="font-semibold">Industry Mentor:</span>
+                                  <span>Mr. Ashish Tatla</span>
+                                </div> -->
+                                <div class="flex justify-between !mb-[10px]">
+                                  <span class="font-semibold">Duration:</span>
+                                  <span >1-Year Certificate
+                                  </span>
+                                </div>
+                                <div class="flex justify-between !mb-[20px]">
+                                  <span class="font-semibold">Batch Size:</span>
+                                  <span>20</span>
+                                </div>
+                                <div class="flex justify-between !mb-[20px]">
+                                  <span class="font-semibold">Training Hours:</span>
+                                  <span>3 Hours a Day, <br> 3 Days a week</span>
+                                </div>
+                                <div class="flex justify-between !mb-[20px]">
+                                  <span class="font-semibold">Initial Batch <br> Launch Date:</span>
+                                  <span>24.07.2025</span>
+                                </div>
+                              
+                              
+                               
+                                <div class="flex justify-between !mb-[20px]">
+                                  <span class="font-semibold">Course Type:</span>
+                                  <span>Certificate</span>
+                                </div>
+                              </div>
+                        </div>
+                        <!-- Team Sidebar Body End -->
+
+                        <!-- Team Sidebar Footer Start -->
+                        <!-- <div class="team-sidebar-footer">
+                            <h3>follow on:</h3>
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div> -->
+                        <!-- Team Sidebar Footer End -->
+                    </div>
+                    <!-- Team Sidebar Box End -->
+                </div>
+
+                <div class="col-lg-8">
+                    <!-- Team Single Content Start -->
+                    <div class="team-single-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title !mb-0 relative">
+                            <img src="images/IICS/iics_image/eligibility-criteria/pr.png" alt="" class="absolute top-[-41%] right-0 w-[100px] z-[2] up-down" >
+                            <!-- <h2 class="text-anime-style-2" data-cursor="-opaque">About <span>me</span></h2> -->
+                            <p class="wow fadeInUp">
+                              <span class="font-bold">Not just PR. Not Just Journalism. This is Brand Alchemy...</span> <br> <br>
+                              This is no ordinary course. It’s a first-of-its-kind gateway into the world of brand guardianship — where you don’t just report stories, you build reputations, sculpt narratives, and protect empires.
+ <br>
+ Blending core principles of journalism, PR, image strategy, and perception engineering, this program is designed for those who think in headlines, act with insight, and speak the language of influence. You’ll learn how to craft content that cuts through noise, build trust in a scroll-happy world, and position people, brands, and causes where they deserve to be — on the pedestal of public consciousness. <br>
+ With live projects, newsroom drills, real-time brand campaigns, and strategic mentoring from the industry’s best, you won’t just learn to communicate. You’ll learn to command conversations.
+ <br>
+ And yes — this could well be the only program in Brand Custodianship in the world.
+Because some careers aren’t chosen.
+
+ <br>
+ They’re carved. Carefully. Powerfully. Publicly. <br>
+ Welcome to the Indian Institute of Creative Skills. <br>
+ Where perception becomes power. <br>
+ And you become the force behind the face.
+
+                              </p>
+                        </div>
+                        <!-- Section Title End -->
+                         <div class="!mt-[60px] hidden">
+                          <h2 class="text-anime-style-2 !text-[22px]" data-cursor="-opaque">Industry <span class="!text-[#dd4041]">Mentor</span></h2>
+                          <!-- <p class="wow fadeInUp">We follow a strategic and personalized approach to hiring, ensuring that businesses find the right professionals who align with their vision and goals. From sourcing top talent to seamless onboarding, </p> -->
+                          
+                          <!-- Service Solution Image Content Start -->
+                          <div class="service-solution-image-content !mt-[20px]">
+                              <!-- Service Solution Image Start -->
+                              <div class="service-solution-image">
+                                  <figure class="image-anime reveal">
+                                      <img src="images/IICS/iics_image/leaders/anand_jha.webp" alt="">
+                                  </figure>
+                              </div>
+                              <!-- Service Solution Image End -->
+                              
+                              <!-- Service Solution Content Start -->
+                              <div class="why-choose-item wow fadeInUp" data-wow-delay="0.2s">
+                                  <!-- <div class="icon-box">
+                                      <img src="images/icon-why-choose-1.svg" alt="">
+                                  </div> -->
+                                  <div class="why-choose-item-content">
+                                      <h2 class="!mb-[10px]">Mr. Anand Jha</h2>
+                                      <p class="!text-[20px]">CEO, Nilee Games</p>
+                                  </div>
+                              </div>
+                              <!-- Service Solution Content End -->
+                          </div>
+                         </div>
+                        
+                        <!-- Team Member Qualification Start -->
+                        <div class="team-member-qualification !mt-[60px] relative">
+                            <!-- Section Title Start -->
+                            <div class="section-title !mb-0">
+                                <h2 class="text-anime-style-2 !text-[22px]" data-cursor="-opaque">Eligibility <span class="!text-[#dd4041]">Criteria</span></h2>
+                                <div class="absolute w-[150px] right-0">
+                                  <video src="images/IICS/iics_image/runningarrow.mp4" autoplay muted loop playsinline></video>
+                                </div>
+                                <p class="wow fadeInUp ">To apply for this program, candidates must have:</p>
+                                <p class="wow fadeInUp !flex gap-[5px]"><span >&#10004;</span>Successfully completed 12th grade (or equivalent) from a recognized board.</p>
+                                <p class="wow fadeInUp !flex gap-[5px]"><span >&#10004;</span>A strong interest in media, communication, public relations, or storytelling.</p>
+                                <p class="wow fadeInUp !flex gap-[5px]"><span >&#10004;</span>Sharp observation skills, a curious mind, and a passion for words that inform, influence, and inspire.</p>
+                                <p class="wow fadeInUp">No prior experience required—just a voice that wants to be heard and the drive to shape narratives that matter.</p>
+                            </div>
+                            <!-- Section Title End -->
+
+                            <!-- Member Info List Start -->
+                            <div class="member-info-list wow fadeInUp !hidden" data-wow-delay="0.2s">
+                                <!-- Member Info Item Start -->
+                                <div class="member-info-item">
+                                    <div class="icon-box">
+                                        <img src="images/icon-service-6.svg" alt="">
+                                    </div>                                    
+                                    <div class="member-info-item-content">
+                                        <h3>Targeted recruitment</h3>
+                                    </div>
+                                </div>
+                                <!-- Member Info Item End -->
+                                
+                                <!-- Member Info Item Start -->
+                                <div class="member-info-item">
+                                    <div class="icon-box">
+                                        <img src="images/icon-service-1.svg" alt="">
+                                    </div>                                    
+                                    <div class="member-info-item-content">
+                                        <h3>Career progression</h3>
+                                    </div>
+                                </div>
+                                <!-- Member Info Item End -->
+                                
+                                <!-- Member Info Item Start -->
+                                <div class="member-info-item">
+                                    <div class="icon-box">
+                                        <img src="images/icon-service-3.svg" alt="">
+                                    </div>                                    
+                                    <div class="member-info-item-content">
+                                        <h3>Employee success</h3>
+                                    </div>
+                                </div>
+                                <!-- Member Info Item End -->
+                                
+                                <!-- Member Info Item Start -->
+                                <div class="member-info-item">
+                                    <div class="icon-box">
+                                        <img src="images/icon-service-4.svg" alt="">
+                                    </div>                                    
+                                    <div class="member-info-item-content">
+                                        <h3>professional skills</h3>
+                                    </div>
+                                </div>
+                                <!-- Member Info Item End -->
+                            </div>
+                            <!-- Member Info List End -->
+                        </div>
+                        <!-- Team Member Qualification End -->
+                        
+                        <!-- Team Member Skill Start -->
+                        <div class="team-member-skills hidden">
+                            <!-- Section Title Start -->
+                            <div class="section-title">
+                                <h2 class="text-anime-style-2" data-cursor="-opaque">Skills</h2>
+                                <p class="wow fadeInUp">Each team member brings a unique set of professional skills, including expertise in project management, community outreach, fundraising, advocacy, talent acquisition, leadership development, and strategic workforce planning to drive organizational success.</p>
+                            </div>
+                            <!-- Section Title End -->
+
+                            <!-- Skills Progress Bar Start -->
+                            <div class="skills-progress-bar">
+                                <!-- Skill Item Start -->
+                                <div class="skillbar" data-percent="97%">
+                                    <div class="skill-data">
+                                        <div class="skill-title">Leadership</div>
+                                        <div class="skill-no">97%</div>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="count-bar"></div>
+                                    </div>
+                                </div>
+                                <!-- Skill Item End -->
+                            </div>
+                            <!-- Skills Progress Bar End -->
+
+                            <!-- Skills Progress Bar Start -->
+                            <div class="skills-progress-bar">
+                                <!-- Skill Item Start -->
+                                <div class="skillbar" data-percent="77%">
+                                    <div class="skill-data">
+                                        <div class="skill-title">Advocacy</div>
+                                        <div class="skill-no">77%</div>
+                                    </div>
+                                    <div class="skill-progress">    
+                                        <div class="count-bar"></div>
+                                    </div>
+                                </div>
+                                <!-- Skill Item End -->
+                            </div>
+                            <!-- Skills Progress Bar End -->
+                        </div>
+                        <!-- Team Member Skill End -->
+
+                        <!-- Team Contact Form Start -->
+                        <div class="team-contact-form contact-us-form hidden">
+                            <!-- Section Title Start -->
+                            <div class="section-title">
+                                <h2 class="text-anime-style-2" data-cursor="-opaque">Get in touch <span>with us</span></h2>
+                            </div>
+                            <!-- Section Title End -->
+
+                            <!-- Contact Form Start -->
+                            <div class="contact-form">
+                                <form id="contactForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp">
+                                    <div class="row">                                
+                                        <div class="form-group col-md-6 mb-4">
+                                            <input type="text" name="fname" class="form-control" id="fname" placeholder="First name" required>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+
+                                        <div class="form-group col-md-6 mb-4">
+                                            <input type="text" name="lname" class="form-control" id="lname" placeholder="Last name" required>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+
+                                        <div class="form-group col-md-6 mb-4">
+                                            <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone" required>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+
+                                        <div class="form-group col-md-6 mb-4">
+                                            <input type="email" name="email" class="form-control" id="email" placeholder="E-mail" required>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+
+                                        <div class="form-group col-md-12 mb-5">
+                                            <textarea name="message" class="form-control" id="message" rows="3" placeholder="Write Message..."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <button type="submit" class="btn-default">submit message</button>
+                                            <div id="msgSubmit" class="h3 hidden"></div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- Contact Form End -->
+                        </div>
+                        <!-- Team Contact Form End -->
+                        <div class="our-faqs !pt-0 !bg-none !bg-transparent !mt-[60px]">
+                            <div class="container !px-0">
+                              <div class="row section-row align-items-center !mb-[20px]">
+                                <div class="col-lg-12">
+                                  <!-- Section Title Start -->
+                                  <div class="section-title">
+                                    <!-- <h3 class="wow fadeInUp">faq</h3> -->
+                                    <h2 class="text-anime-style-2 !text-[22px]" data-cursor="-opaque">Course <span class="!text-[#dd4041]">Curriculum</span></h2>
+                                    <p>The program is divided into two semesters, covering journalism, PR, copywriting, AI tools, and digital marketing.</p>
+                                  </div>
+                                  <!-- Section Title End -->
+                                </div>
+                      
+                                <div class="col-lg-6 hidden">
+                                  <!-- Service Button Start -->
+                                  <!-- <div class="section-btn wow fadeInUp" data-wow-delay="0.2s">
+                                    <a href="faqs.html" class="btn-default">view all faqs</a>
+                                  </div> -->
+                                  <!-- Service Button End -->
+                                </div>
+                              </div>
+                      
+                              <div class="row align-items-center">
+                                <div class="col-lg-6 hidden">
+                                  <!-- Faqs Image Start -->
+                                  <div class="faqs-image">
+                                    <div class="faqs-img">
+                                      <figure class="image-anime reveal">
+                                        <img src="images/faqs-image.jpg" alt="" />
+                                      </figure>
+                                    </div>
+                      
+                                    <!-- Faqs Contact Circle Start -->
+                                    <div class="faq-contact-circle">
+                                      <a href="contact.html">
+                                        <img src="images/contact-us-circle-1.svg" alt="" />
+                                      </a>
+                                    </div>
+                                    <!-- Faqs Contact Circle End -->
+                      
+                                    <!-- Faqs CTA Box Start -->
+                                    <div class="faqs-cta-box">
+                                      <div class="icon-box">
+                                        <img src="images/icon-faqs-cta.svg" alt="" />
+                                      </div>
+                                      <div class="faqs-cta-box-content">
+                                        <h3>Your HR Questions, Answered by Experts</h3>
+                                      </div>
+                                    </div>
+                                    <!-- Faqs CTA Box End -->
+                                  </div>
+                                  <!-- Faqs Image End -->
+                                </div>
+                      
+                                <div class="col-lg-12">
+                                  <!-- Faqs Content Start -->
+                                  <div class="faqs-content">
+                                    <!-- FAQ Accordion Start -->
+                                    <div class="faq-accordion" id="faqaccordion">
+                                      <!-- FAQ Item Start -->
+                                      <div class="accordion-item wow fadeInUp">
+                                        <h2 class="accordion-header" id="heading1">
+                                          <button
+                                            class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapse1"
+                                            aria-expanded="true"
+                                            aria-controls="collapse1"
+                                          >
+                                          Semester 1: 1 – 6 Months
+Course Objective: Foundations of Journalism, PR & Copywriting
+
+                                          </button>
+                                        </h2>
+                                        <div
+                                          id="collapse1"
+                                          class="accordion-collapse collapse"
+                                          aria-labelledby="heading1"
+                                          data-bs-parent="#faqaccordion"
+                                        >
+                                        <div class="accordion-body">
+                                            <p>
+                                                <span class="font-bold">A. Introduction to Journalism</span>
+                                                <ul class="list-decimal text-white">
+                                                  <li class="!mb-[5px]">History and Evolution of Journalism</li>
+                                                  <li class="!mb-[5px]">News Reporting & Writing Fundamentals</li>
+                                                  <li class="!mb-[5px]">Media Ethics & Responsible Journalism</li>
+                                                </ul>
+                                              </p>
+                                            
+                                              <p>
+                                                <span class="font-bold">B. Copywriting & Content Strategy</span>
+                                                <ul class="list-decimal text-white">
+                                                  <li class="!mb-[5px]">Writing for Print, Digital & Broadcast Media</li>
+                                                  <li class="!mb-[5px]">Storytelling Techniques for Brands & Campaigns</li>
+                                                  <li class="!mb-[5px]">SEO Copywriting & Blog Writing</li>
+                                                </ul>
+                                              </p>
+                                            
+                                              <p>
+                                                <span class="font-bold">C. Public Relations Essentials</span>
+                                                <ul class="list-decimal text-white">
+                                                  <li class="!mb-[5px]">Fundamentals of PR & Brand Communication</li>
+                                                  <li class="!mb-[5px]">Press Releases & Media Pitching</li>
+                                                  <li class="!mb-[5px]">Corporate PR & Brand Messaging</li>
+                                                </ul>
+                                              </p>
+                                            
+                                              <p>
+                                                <span class="font-bold">D. Digital Journalism & AI Integration</span>
+                                                <ul class="list-decimal text-white">
+                                                  <li class="!mb-[5px]">AI-Assisted Journalism & News Generation</li>
+                                                  <li class="!mb-[5px]">Chatbots & AI Tools for Media Communication</li>
+                                                  <li class="!mb-[5px]">Podcasting & Video Journalism</li>
+                                                </ul>
+                                              </p>
+
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- FAQ Item End -->
+                      
+                                      <!-- FAQ Item Start -->
+                                      <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
+                                        <h2 class="accordion-header" id="heading2">
+                                          <button
+                                            class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapse2"
+                                            aria-expanded="true"
+                                            aria-controls="collapse2"
+                                          >
+                                          Semester 2: 7 – 12 Months
+Course Objective: Digital Marketing, Advanced PR & AI Integration
+
+                                          </button>
+                                        </h2>
+                                        <div
+                                          id="collapse2"
+                                          class="accordion-collapse collapse"
+                                          aria-labelledby="heading2"
+                                          data-bs-parent="#faqaccordion"
+                                        >
+                                        <div class="accordion-body">
+                                            <p>
+                                              <span class="font-bold">A. Digital Marketing for Journalism & PR</span>
+                                              <ul class="list-decimal text-white">
+                                                <li class="!mb-[5px]">Social Media Strategy for News & Brands</li>
+                                                <li class="!mb-[5px]">Influencer Marketing & Media Outreach</li>
+                                                <li class="!mb-[5px]">Understanding Analytics & Measuring PR Impact</li>
+                                              </ul>
+                                            </p>
+                                          
+                                            <p>
+                                              <span class="font-bold">B. Crisis Communication & Reputation Management</span>
+                                              <ul class="list-decimal text-white">
+                                                <li class="!mb-[5px]">AI-Enhanced Crisis Handling & Media Damage Control</li>
+                                                <li class="!mb-[5px]">Ethics of Public Relations & Digital Branding</li>
+                                              </ul>
+                                            </p>
+                                          
+                                            <p>
+                                              <span class="font-bold">C. Audio-Visual Journalism & Podcast Production</span>
+                                              <ul class="list-decimal text-white">
+                                                <li class="!mb-[5px]">Camera, Editing, Sound Technologies</li>
+                                                <li class="!mb-[5px]">Presentation & News Anchoring</li>
+                                                <li class="!mb-[5px]">Podcast Production</li>
+                                              </ul>
+                                            </p>
+                                          
+                                            <p>
+                                              <span class="font-bold">D. AI Tools for Journalism & PR</span>
+                                              <ul class="list-decimal text-white">
+                                                <li class="!mb-[5px]">Using AI for Content Optimization & Storytelling</li>
+                                                <li class="!mb-[5px]">AI-Generated News & Audience Personalization</li>
+                                              </ul>
+                                            </p>
+                                          
+                                            <p>
+                                              <span class="font-bold">E. Strategic PR & Brand Communication</span>
+                                              <ul class="list-decimal text-white">
+                                                <li class="!mb-[5px]">Building Brand Identity through AI & Public Relations</li>
+                                                <li class="!mb-[5px]">Multimedia & Interactive PR Strategies</li>
+                                              </ul>
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- FAQ Item End -->
+                      
+                                      <!-- FAQ Item Start -->
+                                      <div class="accordion-item wow fadeInUp hidden" data-wow-delay="0.4s">
+                                        <h2 class="accordion-header" id="heading3">
+                                          <button
+                                            class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapse3"
+                                            aria-expanded="false"
+                                            aria-controls="collapse3"
+                                          >
+                                          Term 3 (Months 9-12) — Business, Branding & Portfolio Creation
+                                          </button>
+                                        </h2>
+                                        <div
+                                          id="collapse3"
+                                          class="accordion-collapse collapse"
+                                          aria-labelledby="heading3"
+                                          data-bs-parent="#faqaccordion"
+                                        >
+                                          <div class="accordion-body">
+                                            <p>
+                                              <ul class="list-decimal text-white">
+                                                <li class="!mb-[5px]">Advanced Prosthetics & Special Effects Makeup – Airbrushing, zombie transformations</li>
+                                                <li class="!mb-[5px]">Body Art & Creative Painting – Full-body designs, avant-garde concepts </li>
+                                                <li class="!mb-[5px]">Freelancing & Business Strategies – Portfolio building, branding, marketing</li>
+                                                <li class="!mb-[5px]">Capstone Project – Complete a full-character transformation and present to industry professional</li>
+                                                <!-- <li class="!mb-[5px]">Unreal / Unity</li>
+                                                <li class="!mb-[5px]">UX & UI for Game</li>
+                                                <li class="!mb-[5px]">Capstone Project</li> -->
+                                              </ul>
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- FAQ Item End -->
+                      
+                                      <!-- FAQ Item Start -->
+                                      <!-- <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
+                                        <h2 class="accordion-header" id="heading4">
+                                          <button
+                                            class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapse4"
+                                            aria-expanded="false"
+                                            aria-controls="collapse4"
+                                          >
+                                          Semester 4
+                                          </button>
+                                        </h2>
+                                        <div
+                                          id="collapse4"
+                                          class="accordion-collapse collapse"
+                                          aria-labelledby="heading4"
+                                          data-bs-parent="#faqaccordion"
+                                        >
+                                          <div class="accordion-body">
+                                            <p>
+                                                Apprenticeship/Internship at Studio
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div> -->
+                                      <!-- FAQ Item End -->
+                      
+                                      <!-- FAQ Item Start -->
+                                      <!-- <div class="accordion-item wow fadeInUp" data-wow-delay="0.8s">
+                                        <h2 class="accordion-header" id="heading5">
+                                          <button
+                                            class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapse5"
+                                            aria-expanded="false"
+                                            aria-controls="collapse5"
+                                          >
+                                            What industries do you specialize in?
+                                          </button>
+                                        </h2>
+                                        <div
+                                          id="collapse5"
+                                          class="accordion-collapse collapse"
+                                          aria-labelledby="heading5"
+                                          data-bs-parent="#faqaccordion"
+                                        >
+                                          <div class="accordion-body">
+                                            <p>
+                                              We offer a range of HR solutions, including recruitment
+                                              services, employee training and development.
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div> -->
+                                      <!-- FAQ Item End -->
+                                    </div>
+                                    <!-- FAQ Accordion End -->
+                                  </div>
+                                  <!-- Faqs Content End -->
+                                </div>
+                                <div class="team-member-qualification !mt-[60px] relative hidden">
+                                  <!-- Section Title Start -->
+                                  <div class="section-title !mb-0">
+                                      <h2 class="text-anime-style-2 !text-[22px]" data-cursor="-opaque">Industry Exposure & <span class="!text-[#dd4041]">Hands-On Training</span></h2>
+                                      <div class="absolute w-[150px] right-0">
+                                        <video src="images/IICS/iics_image/runningarrow.mp4" autoplay muted loop playsinline></video>
+                                      </div>
+                                      <!-- <p class="wow fadeInUp ">To apply for this program, candidates must have:</p> -->
+                                      <p class="wow fadeInUp !flex gap-[5px]"><span >&#10004;</span>Guest Masterclasses – Learn from industry leaders in hair, makeup, and prosthetic design.</p>
+                                      <p class="wow fadeInUp !flex gap-[5px]"><span >&#10004;</span>Live Demonstrations– Hands-on practice with top-tier products and professional models.</p>
+                                      <p class="wow fadeInUp !flex gap-[5px]"><span >&#10004;</span>Portfolio Development Sessions – Work with photographers & filmmakers to curate standout visuals.</p>
+                                      <p class="wow fadeInUp !flex gap-[5px]"><span >&#10004;</span>Internship & Networking Opportunities – Connect with agencies, brands, and production houses.</p>
+                                      <!-- <p class="wow fadeInUp">No prior training needed—just creativity, curiosity, and a drive to master the art of visual transformation.</p> -->
+                                  </div>
+                                  <!-- Section Title End -->
+      
+                                  <!-- Member Info List Start -->
+                                  <div class="member-info-list wow fadeInUp !hidden" data-wow-delay="0.2s">
+                                      <!-- Member Info Item Start -->
+                                      <div class="member-info-item">
+                                          <div class="icon-box">
+                                              <img src="images/icon-service-6.svg" alt="">
+                                          </div>                                    
+                                          <div class="member-info-item-content">
+                                              <h3>Targeted recruitment</h3>
+                                          </div>
+                                      </div>
+                                      <!-- Member Info Item End -->
+                                      
+                                      <!-- Member Info Item Start -->
+                                      <div class="member-info-item">
+                                          <div class="icon-box">
+                                              <img src="images/icon-service-1.svg" alt="">
+                                          </div>                                    
+                                          <div class="member-info-item-content">
+                                              <h3>Career progression</h3>
+                                          </div>
+                                      </div>
+                                      <!-- Member Info Item End -->
+                                      
+                                      <!-- Member Info Item Start -->
+                                      <div class="member-info-item">
+                                          <div class="icon-box">
+                                              <img src="images/icon-service-3.svg" alt="">
+                                          </div>                                    
+                                          <div class="member-info-item-content">
+                                              <h3>Employee success</h3>
+                                          </div>
+                                      </div>
+                                      <!-- Member Info Item End -->
+                                      
+                                      <!-- Member Info Item Start -->
+                                      <div class="member-info-item">
+                                          <div class="icon-box">
+                                              <img src="images/icon-service-4.svg" alt="">
+                                          </div>                                    
+                                          <div class="member-info-item-content">
+                                              <h3>professional skills</h3>
+                                          </div>
+                                      </div>
+                                      <!-- Member Info Item End -->
+                                  </div>
+                                  <!-- Member Info List End -->
+                              </div>
+                                <div class="service-solution-box ">
+                                  
+                                    <!-- Service Solution Image Content End -->
+                            
+                                    <!-- Service Solution Item List Start -->
+                                    <div class="service-solution-item-list wow fadeInUp" data-wow-delay="0.4s">
+                                        <!-- Why Choose Item Start -->
+                                        <div class="why-choose-item careerOutcomes !w-full" >
+                                          <div class="w-[100px]">
+                                              <img src="images/IICS/iics_image/career-opportunity.png" alt="">
+                                          </div>
+                                          <div class="why-choose-item-content">
+                                              <h3 class="text-anime-style-2 ">Career <span class="!text-[#dd4041]">Opportunities</span></h3>
+                                              <p>AI-Assisted Journalist<br>
+                                                PR Executive & Digital Brand Strategist<br>
+                                                Copywriter & SEO Content Specialist<br>
+                                                Broadcast & Podcast Producer<br>
+                                                Social Media Manager & Digital PR Expert
+                                                
+                                                
+                                              </p>
+                                          </div>
+                                      </div>
+                                        <!-- Why Choose Item End -->
+                                        
+                                        <!-- Why Choose Item Start -->
+                                        <!-- <div class="why-choose-item careerOutcomes" >
+                                            <div class="icon-box">
+                                                <img src="images/icon-why-choose-2.svg" alt="">
+                                            </div>
+                                            <div class="why-choose-item-content">
+                                                <h3>Career Outcomes (Entrepreneurship)</h3>
+                                                <p>XR Startup Founder, Metaverse Design Studio, Training Simulation Company Owner</p>
+                                            </div>
+                                        </div> -->
+                                        <!-- Why Choose Item End -->
+                                        
+                                        <!-- Why Choose Item Start -->
+                                        <!-- <div class="why-choose-item">
+                                            <div class="icon-box">
+                                                <img src="images/icon-why-choose-3.svg" alt="">
+                                            </div>
+                                            <div class="why-choose-item-content">
+                                                <h3>Employee Development</h3>
+                                                <p>We help businesses attract, develop, and retain top talent.</p>
+                                            </div>
+                                        </div> -->
+                                        <!-- Why Choose Item End -->
+                                    </div>
+                                    <!-- Service Solution Item List End -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <!-- Team Single Content End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Team Single End -->
+
+   
+
+    <!-- Scrolling Ticker Section Start -->
+    <div class="our-scrolling-ticker footer-scrolling-ticker hidden">
+        <!-- Scrolling Ticker Start -->
+        <div class="scrolling-ticker-box">
+            <div class="scrolling-content">
+                <span><img src="images/asterisk-icon.svg" alt="">HR Consulting</span>
+                <span><img src="images/asterisk-icon.svg" alt="">Payroll & Compliance</span>
+                <span><img src="images/asterisk-icon.svg" alt="">Training & Development</span>
+                <span><img src="images/asterisk-icon.svg" alt="">Training & Development</span>
+                <span><img src="images/asterisk-icon.svg" alt="">Outplacement & Employee Relations</span>
+                <span><img src="images/asterisk-icon.svg" alt="">HR Consulting</span>
+                <span><img src="images/asterisk-icon.svg" alt="">Payroll & Compliance</span>
+                <span><img src="images/asterisk-icon.svg" alt="">Training & Development</span>
+                <span><img src="images/asterisk-icon.svg" alt="">Training & Development</span>
+                <span><img src="images/asterisk-icon.svg" alt="">Outplacement & Employee Relations</span>
+            </div>
+
+            <div class="scrolling-content">
+                <span><img src="images/asterisk-icon.svg" alt="">HR Consulting</span>
+                <span><img src="images/asterisk-icon.svg" alt="">Payroll & Compliance</span>
+                <span><img src="images/asterisk-icon.svg" alt="">Training & Development</span>
+                <span><img src="images/asterisk-icon.svg" alt="">Training & Development</span>
+                <span><img src="images/asterisk-icon.svg" alt="">Outplacement & Employee Relations</span>
+                <span><img src="images/asterisk-icon.svg" alt="">HR Consulting</span>
+                <span><img src="images/asterisk-icon.svg" alt="">Payroll & Compliance</span>
+                <span><img src="images/asterisk-icon.svg" alt="">Training & Development</span>
+                <span><img src="images/asterisk-icon.svg" alt="">Training & Development</span>
+                <span><img src="images/asterisk-icon.svg" alt="">Outplacement & Employee Relations</span>
+            </div>
+        </div>
+    </div>
+    <!-- Scrolling Ticker Section End -->
+
+    <!-- Footer Main Start -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <!-- About Footer start -->
+            <div class="footer-header">
+              <!-- Footer Logo Start -->
+              <div class="footer-logo">
+                <img src="images/IICS/iics_image/logo_main_white.webp" alt="" />
+              </div>
+              <!-- Footer Logo End -->
+
+              <!-- Footer Social Links Start -->
+              <div class="footer-social-links">
+                <span>Follow our socials</span>
+                <ul>
+                  <li>
+                    <a href="https://www.facebook.com/IICSIndiaorg?mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+                  <!-- <li>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  </li> -->
+                  <li>
+                    <a href="https://www.instagram.com/iicsindiaorg/"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <!-- <li>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  </li> -->
+                  <li>
+                    <a href="https://www.youtube.com/@IICSIndiaorg"><i class="fa-brands fa-youtube"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Footer Social Links End -->
+            </div>
+            <!-- About Footer End -->
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <!-- Footer Links Start -->
+            <div class="footer-links">
+              <h3>quick links</h3>
+              <ul>
+                <li><a href="contact.html">Enquire Now</a></li>
+                <li><a href="/#programs">Programs</a></li>
+                <li><a href="admission-process.html">Admission</a></li>
+                <li><a href="event.html">Life @ IICS</a></li>
+                <li><a href="faqs.html">Creative Incubator</a></li>
+
+              </ul>
+            </div>
+            <!-- Footer Links End -->
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <!-- Footer Links Start -->
+            <div class="footer-links">
+              <h3>Campus</h3>
+              <ul>
+                <li class="font-bold"><a href="/#campus">Delhi Campus
+                  <br>
+                  <span class="font-normal">13-A, 3rd Floor, Above Tata Motors Showroom, Main Ring Road, Lajpat Nagar-4, New Delhi- 110024</span>
+                </a></li>
+                <li class="font-bold"><a href="/#campus">Bhopal Campus
+                  <br>
+                  <span class="font-normal">Jagran Lakecity University,
+                    Mugaliyachap,
+                    Near Ratibad Bhopal –
+                    462044</span>
+                </a></li>
+               
+              </ul>
+            </div>
+            <!-- Footer Links End -->
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <!-- Footer Links Start -->
+            <div class="footer-links">
+              <h3 class="invisible">Services</h3>
+              <ul>
+                <li class="font-bold"><a href="/#campus">Chandigarh Campus
+                  <br>
+                  <span class="font-normal">CH Devi Lal Centre of Learning
+                    Plot No 5, Sec 28 B,
+                    Madhya Marg,
+                    Chandigarh, India</span>
+                </a></li>
+                <li class="font-bold"><a href="/#campus">Mumbai Campus
+                  <br>
+                  <span class="font-normal">Coming Soon</span>
+                </a></li>
+              </ul>
+            </div>
+            <!-- Footer Links End -->
+          </div>
+
+          <div class="col-lg-3 col-md-5">
+            <!-- Footer Links Start -->
+            <div class="footer-links">
+              <h3>get in touch</h3>
+
+              <!-- Footer Contact Item Start -->
+              <div class="footer-contact-item">
+                <div class="icon-box">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="footer-contact-content">
+                  <p><a href="tel:+123465789">+91 959-4949-959
+                  </a></p>
+                </div>
+              </div>
+              <!-- Footer Contact Item End -->
+
+              <!-- Footer Contact Item Start -->
+              <div class="footer-contact-item">
+                <div class="icon-box">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="footer-contact-content">
+                  <p>
+                    <a href="mailto:info@domainname.com">info@iicsindia.org</a>
+                  </p>
+                </div>
+              </div>
+              <!-- Footer Contact Item End -->
+
+              <!-- Footer Contact Item Start -->
+             
+              <!-- Footer Contact Item End -->
+            </div>
+            <!-- Footer Links End -->
+          </div>
+
+          
+
+          <div class="col-lg-12">
+            <!-- Footer Copyright Text Start -->
+            <div class="footer-copyright-text">
+              <p>Copyright © 2025 All Rights Reserved.</p>
+            </div>
+            <!-- Footer Copyright Text End -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Main End -->
+
+    <!-- Jquery Library File -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap js file -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Validator js file -->
+    <script src="js/validator.min.js"></script>
+    <!-- SlickNav js file -->
+    <script src="js/jquery.slicknav.js"></script>
+    <!-- Swiper js file -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Counter js file -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Magnific js file -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- SmoothScroll -->
+    <script src="js/SmoothScroll.js"></script>
+    <!-- Parallax js -->
+    <script src="js/parallaxie.js"></script>
+    <!-- MagicCursor js file -->
+    <script src="js/gsap.min.js"></script>
+    <script src="js/magiccursor.js"></script>
+    <!-- Text Effect js file -->
+    <script src="js/SplitText.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <!-- YTPlayer js File -->
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <!-- Wow js file -->
+    <script src="js/wow.min.js"></script>
+    <!-- Main Custom js file -->
+    <script src="js/function.js"></script>
+    <script src="./js/chatbot.js"></script>
+
+    <script>
+      const toggleBtn = document.getElementById('chatbot-toggle');
+      const overlay = document.getElementById('chatbot-overlay');
+      let isOpen = false;
+    
+      const openChatbot = () => {
+        overlay.classList.remove('hidden');
+        document.body.classList.add('overflow-hidden');
+        isOpen = true;
+      };
+    
+      const closeChatbot = () => {
+        overlay.classList.add('hidden');
+        document.body.classList.remove('overflow-hidden');
+        isOpen = false;
+      };
+    
+      toggleBtn.addEventListener('click', () => {
+        isOpen ? closeChatbot() : openChatbot();
+      });
+    
+      overlay.addEventListener('click', () => {
+        closeChatbot();
+      });
+    
+      // Prevent close when clicking inside chatbot box
+      document.getElementById('chatbot').addEventListener('click', (e) => {
+        e.stopPropagation();
+      });
+    </script>
+</body>
+</html>

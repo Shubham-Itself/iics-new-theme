@@ -59,15 +59,41 @@
         <div id="loading-icon" class="w-[400px] !max-w-[400px] "><img class="!max-w-[400px] " src="images/IICS/iics_image/iics-logo-white-red.png" alt="" /></div>
       </div>
     </div>
-    <!-- <div class="social-bar sticky z-[200] top-[70%] left-[100%] bg-[#fff] !py-[20px] !px-[10px] !bg-[#000] w-fit">
-      <div class="flex flex-col gap-[20px]">
-        <img src="images/IICS/iics_image/creative-incubator/facbook.png" class="!w-[40px]" alt="" >
-        <img src="images/IICS/iics_image/creative-incubator/instagram.png" class="!w-[40px]" alt="" >
-        <img src="images/IICS/iics_image/creative-incubator/youtube.png" class="!w-[40px] " alt="" >
+   <!-- Social Bar with Chatbot Button -->
+<div class="fixed z-50 top-[50%] right-0  py-2 px-2">
+  <div class="flex flex-col items-center gap-3">
+    <a href="https://www.facebook.com/IICSIndiaorg?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">  <img src="images/IICS/iics_image/creative-incubator/facbook.png"  class="w-[40px] box-shadow-img" alt=""></a>
+  <a href="https://www.instagram.com/iicsindiaorg/" target="_blank" rel="noopener noreferrer">
+    <img src="images/IICS/iics_image/creative-incubator/instagram.png" class="w-[40px] box-shadow-img" alt="">
 
-      </div>
-    </div> -->
-    <!-- Preloader End -->
+  </a>
+  <a href="https://www.youtube.com/@IICSIndiaorg" target="_blank" rel="noopener noreferrer">
+    <img src="images/IICS/iics_image/creative-incubator/youtube.png" class="w-[40px] box-shadow-img" alt="">
+  </a>
+    
+    
+    <!-- Chatbot Toggle Button -->
+     <img id="chatbot-toggle" src="images/IICS/iics_image/robot-img.png" class="w-[50px] !mt-[60px]" alt="">
+    <!-- <button  class="w-[40px] h-[40px] bg-white rounded-full flex items-center justify-center text-black font-bold">💬</button> -->
+  </div>
+</div>
+
+<!-- Chatbot Overlay -->
+<div id="chatbot-overlay" class="fixed inset-0 z-[1000] bg-black/70 hidden">
+  <div id="chatbot"
+    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded shadow-lg max-w-[400px] w-full"
+    onclick="event.stopPropagation()">
+    <div id="chat-window">
+      <div class="message bot mb-2">Hi, I’m Juno. Welcome to the Indian Institute of Creative Skills! How can I help you?</div>
+      <p class="mb-2">What you want to know?</p>
+      <div class="message bot" id="subject-buttons"></div>
+    </div>
+    <div id="input-area" class="mt-4 flex gap-2">
+      <input type="text" id="user-input" placeholder="Type your question..." class="flex-1 border p-2 rounded" />
+      <button id="send-btn" class="bg-blue-600 text-white px-4 py-2 rounded">Ask</button>
+    </div>
+  </div>
+</div>
 
     <!-- Topbar Section Start -->
     <div class="topbar !bg-[#F7F7F7]">
@@ -110,17 +136,17 @@
                 <li>info@iicsindia.org</li>
                 <li>+91 959-4949-959</li>
                 <li>
-                  <a href="#" style="color: #e1306c"
+                  <a href="https://www.instagram.com/iicsindiaorg/" style="color: #e1306c"
                     ><i class="fa-brands fa-instagram"></i
                   ></a>
                 </li>
                 <li>
-                  <a href="#" style="color: #1877f2"
+                  <a href="https://www.facebook.com/IICSIndiaorg?mibextid=ZbWKwL" style="color: #1877f2"
                     ><i class="fa-brands fa-facebook-f"></i
                   ></a>
                 </li>
                 <li>
-                  <a href="#" style="color: #ff0000"
+                  <a href="https://www.youtube.com/@IICSIndiaorg" style="color: #ff0000"
                     ><i class="fa-brands fa-youtube"></i
                   ></a>
                 </li>
@@ -153,7 +179,7 @@
               <div class="nav-menu-wrapper">
                 <ul class="navbar-nav mr-auto" id="menu">
                   <li class="nav-item submenu">
-                    <a class="nav-link !text-[#2C3E50] cursor-pointer">IICS</a>
+                    <a class="nav-link !text-[#2C3E50] cursor-pointer">About IICS</a>
                     <ul class="arrow-thing ">
                       <li class="nav-item !text-[14px]">
                         <a class="nav-link cursor-pointer !text-[14px] !flex justify-between items-center" href="about.html"
@@ -305,63 +331,8 @@
                     </ul>
                   </li>
                   <li class="nav-item submenu">
-                    <a class="nav-link !text-[#2C3E50] " href="about.html"
-                      >Admissions</a
-                    >
-                    <ul class="arrow-thing !left-[-56px]">
-                      <li class="nav-item !text-[14px]">
-                        <a class="nav-link cursor-pointer !text-[14px] !flex justify-between items-center" href="about.html"
-                          >
-                          <span class="flex items-center gap-[5px]">
-                            <img src="./images/IICS/iics_image/listIcon/012.png" alt="" class="w-[18px]">
-                            Entrance Process</span>
-                          <i class="fas fa-chevron-right text-[10px] ml-2 mt-[2px]"></i>
-                          </a
-                        >
-                        <ul class=" !w-[400px] !left-[103%]">
-                          <li class="nav-item">
-                            <a href="admission-process.html" class="nav-link !text-[14px] !flex items-center gap-[5px]">
-                            <img src="./images/IICS/iics_image/listIcon/011.png" alt="" class="w-[18px]">
-
-                             How To Apply
-                            </a>
-                          </li>
-                          <li class="nav-item">
-                            <a href="" class="nav-link !text-[14px] !flex items-start gap-[5px]">
-                            <img src="./images/IICS/iics_image/listIcon/08.png" alt="" class="w-[18px]">
-
-                             Eligibility Criteria
-                            </a>
-                          </li>
-                          <li class="nav-item">
-                            <a href="" class="nav-link !text-[14px] !flex items-start gap-[5px]">
-                              <img src="./images/IICS/iics_image/listIcon/013.png" alt="" class="w-[18px]">
-                              Sample Papers
-                            </a>
-                          </li>
-                          
-                        </ul>
-                      </li>
-                      <li class="nav-item !text-[14px]">
-                        <a class="nav-link !text-[14px] !flex items-center gap-[5px]" href="public-notice.html"
-                          >
-                          <img src="./images/IICS/iics_image/listIcon/09.png" alt="" class="w-[18px]">
-                          Public Notice</a
-                        >
-                      </li>
-                      <li class="nav-item !text-[14px]">
-                        <a class="nav-link !text-[14px] !flex items-center gap-[5px]" href="about.html"
-                          >
-                          <img src="./images/IICS/iics_image/listIcon/010.png" alt="" class="w-[18px]">
-                          Prospectus</a
-                        >
-                      </li>
-                    
-                    </ul>
-                  </li>
-                  <li class="nav-item submenu">
                     <a class="nav-link !text-[#2C3E50]" href="services.html"
-                      >Courses</a
+                      >Programs</a
                     >
                     <ul class="arrow-thing !left-[-56px]">
                       <li class="nav-item !text-[14px]">
@@ -418,14 +389,14 @@
                         >
                         <ul class=" !w-[400px] !left-[103%]">
                           <li class="nav-item">
-                            <a href="" class="nav-link !text-[14px] !flex items-center gap-[5px]">
+                            <a href="hair-makeup-and-prosthetics.html" class="nav-link !text-[14px] !flex items-center gap-[5px]">
                             <img src="./images/IICS/iics_image/listIcon/020.png" alt="" class="w-[18px]">
 
                             Hair, Make Up & Prosthetics
                             </a>
                           </li>
                           <li class="nav-item">
-                            <a href="" class="nav-link !text-[14px] !flex items-start gap-[5px]">
+                            <a href="costume-design.html" class="nav-link !text-[14px] !flex items-start gap-[5px]">
                             <img src="./images/IICS/iics_image/listIcon/021.png" alt="" class="w-[18px]">
 
                             Costume Design
@@ -433,7 +404,7 @@
                             </a>
                           </li>
                           <li class="nav-item">
-                            <a href="" class="nav-link !text-[14px] !flex items-start gap-[5px]">
+                            <a href="pr-journalism.html" class="nav-link !text-[14px] !flex items-start gap-[5px]">
                               <img src="./images/IICS/iics_image/listIcon/022.png" alt="" class="w-[18px]">
                               PR & Journalism
 
@@ -448,8 +419,71 @@
                     </ul>
                   </li>
                   <li class="nav-item submenu">
+                    <a class="nav-link !text-[#2C3E50] " href="about.html"
+                      >Admissions</a
+                    >
+                    <ul class="arrow-thing !left-[-56px]">
+                      <li class="nav-item !text-[14px]">
+                        <a class="nav-link cursor-pointer !text-[14px] !flex justify-between items-center" href="#"
+                          >
+                          <span class="flex items-center gap-[5px]">
+                            <img src="./images/IICS/iics_image/listIcon/012.png" alt="" class="w-[18px]">
+                            Entrance Process</span>
+                          <i class="fas fa-chevron-right text-[10px] ml-2 mt-[2px]"></i>
+                          </a
+                        >
+                        <ul class=" !w-[400px] !left-[103%]">
+                          <li class="nav-item">
+                            <a href="admission-process.html" class="nav-link !text-[14px] !flex items-center gap-[5px]">
+                            <img src="./images/IICS/iics_image/listIcon/011.png" alt="" class="w-[18px]">
+
+                             How To Apply
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="admission-process.html#eligibilityCriteria" class="nav-link !text-[14px] !flex items-start gap-[5px]">
+                            <img src="./images/IICS/iics_image/listIcon/08.png" alt="" class="w-[18px]">
+
+                             Eligibility Criteria
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="" class="nav-link !text-[14px] !flex items-start gap-[5px]">
+                              <img src="./images/IICS/iics_image/listIcon/013.png" alt="" class="w-[18px]">
+                              Sample Papers
+                            </a>
+                          </li>
+                          
+                        </ul>
+                      </li>
+                      <li class="nav-item !text-[14px]">
+                        <a class="nav-link !text-[14px] !flex items-center gap-[5px]" href="public-notice.html"
+                          >
+                          <img src="./images/IICS/iics_image/listIcon/09.png" alt="" class="w-[18px]">
+                          Public Notice</a
+                        >
+                      </li>
+                      <li class="nav-item !text-[14px]">
+                        <a class="nav-link !text-[14px] !flex items-center gap-[5px]" href="about.html"
+                          >
+                          <img src="./images/IICS/iics_image/listIcon/010.png" alt="" class="w-[18px]">
+                          Prospectus</a
+                        >
+                      </li>
+                    
+                    </ul>
+                  </li>
+
+                  <li class="nav-item ">
+                    <a class="nav-link !text-[#2C3E50] " href="team.html"
+                      >Industry Connect</a
+                    >
+                   
+                  </li>
+                
+                  <li class="nav-item submenu">
                     <a class="nav-link !text-[#2C3E50]" href="blog.html"
-                      >Life @Iics
+                      >Media & Gallery
                       
                       </a
                     >
@@ -503,7 +537,7 @@
                     </ul>
                   </li>
 
-                  <li class="nav-item submenu">
+                  <li class="nav-item submenu hidden">
                     <a class="nav-link !text-[#2C3E50]" href="blog.html"
                       >Creative Incubators
                       
@@ -784,9 +818,12 @@
               <!-- About Image Box 1 Start -->
               <div class="about-image-box-1">
                 <!-- Successful Circle Image Start -->
-                <div class="successful-circle-img">
-                  <img src="images/IICS/iics_image/iics_circle.jpg" alt="" />
+                <div class="about-image border-b-[10px] border-b-[#fff]">
+                  <figure class="image-anime reveal ">
+                    <img src="images/IICS/iics_image/about/sushma-about.png" alt="" />
+                  </figure>
                 </div>
+               
                 <!-- Successful Circle Image End -->
 
                 <!-- About Image Start -->
@@ -857,23 +894,20 @@
                   <span class="font-bold"
                     >Welcome to the Indian Institute of Creative Skills (IICS)</span
                   >
-                  -- where education is not textbook-deep. It is soul-deep.
-                  <br>
-                  This is where <span class="font-bold">Padma Shri honorees, Oscar winners, National Award greats, global icons, and industry changemakers </span> come together — not to lecture, but to share, shape, and spark the next generation of creators, communicators, and game-changers.
+                  - where education is not textbook-deep. It is soul-deep.
                   <br> 
+                  This is where <span class="font-bold">Padma Shri honorees, Oscar winners, National Award greats, global icons, and industry changemakers </span> come together — not to lecture, but to share, shape, and spark the next generation of creators, communicators, and game-changers.
+                  <br>  
                   Whether your dream lies in <span class="font-bold">acting and performing arts,  journalism, filmmaking, sound design, music, event management, image strategisation, branding, digital storytelling, gaming, animation, vfx or beyond </span>  — Indian Institute of Creative Skills (IICS) is where your ambition finds its roots… and wings. <br>
-                  Here, you're not just learning. You're becoming. <br>
+                  Here, you're not just learning. You're becoming. <br> 
                   You're not just following a curriculum. You're following greatness.
-<br>
-Why settle for ordinary, when the extraordinary are ready to teach you?
-<br>
-<span class="font-bold">
-  Admissions open.
-
-
-</span><br>
+<br> 
+Why settle for ordinary, when the extraordinary are ready to teach you? <br> <br>
 Be where the future of India’s creative force is being built — one skill, one story, one star at a time. <br>
-You have got the spark. We have got the skill. Let us  create brilliance together — at Indian Institute of Creative Skills (IICS). 
+
+You have got the spark. We have got the skill. Let us  create brilliance together — at IICS...
+
+
 
 
                  
@@ -927,13 +961,13 @@ You have got the spark. We have got the skill. Let us  create brilliance togethe
       </div>
     </div>
     <!-- About us Section End -->
-    <div class="our-pricing">
+    <div class="our-pricing" id="programs">
       <div class="container">
         <div class="row section-row flex-col !mb-0">
           <div class="col-lg-12">
             <!-- Section Title Start -->
             <div class="section-title">
-              <h3 class="wow fadeInUp !text-[18px]">
+              <h3 class="wow fadeInUp learnText !text-[18px]">
                 Learn what tomorrow demands.
               </h3>
               <h2 class="text-anime-style-2" data-cursor="-opaque" data-wow-delay="0.2s">
@@ -1006,8 +1040,10 @@ You have got the spark. We have got the skill. Let us  create brilliance togethe
             <a href="#" class="btn-default">View All Certificate Courses</a>
           </div>
           <div class="row">
-            <div class="swiper">
-              <div class="swiper-wrapper">Certificate courses go here...</div>
+            <div class="swiper mySwiperSecond">
+              <div class="swiper-wrapper" id="certificateContainer"></div>
+              <div class="swiper-pagination mt-4"></div>
+
             </div>
           </div>
         </div>
@@ -1050,13 +1086,10 @@ You have got the spark. We have got the skill. Let us  create brilliance togethe
                 class=" w-full rounded-[10px] overflow-hidden"
               >
               
-                <video autoplay muted loop playsinline>
-                  <source
-                    src="images/IICS/iics_image/about_video.mp4"
-                    type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-                </video>
+              <video controls loop playsinline>
+                <source src="images/IICS/iics_image/about-video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
               </div>
                 </div>
             
@@ -1816,7 +1849,7 @@ You have got the spark. We have got the skill. Let us  create brilliance togethe
               <div class="our-commitment-img-1">
                 <figure class="image-anime reveal">
                   <img
-                    src="images/IICS/iics_image/student-life/student-life-two.webp"
+                    src="images/IICS/iics_image/student-life/student_life_two.png"
                     alt=""
                   />
                 </figure>
@@ -1824,7 +1857,7 @@ You have got the spark. We have got the skill. Let us  create brilliance togethe
               <div class="our-commitment-img-2">
                 <figure class="image-anime reveal">
                   <img
-                    src="images/IICS/iics_image/student-life/student-life-one.webp"
+                    src="images/IICS/iics_image/student-life/student-life-one.png"
                     alt=""
                   />
                 </figure>
@@ -3229,19 +3262,19 @@ At IICS, student life is where the real world begins. <br>
                 <span>Follow our socials</span>
                 <ul>
                   <li>
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/IICSIndiaorg?mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a>
                   </li>
-                  <li>
+                  <!-- <li>
                     <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                  </li>
+                  </li> -->
                   <li>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/iicsindiaorg/"><i class="fa-brands fa-instagram"></i></a>
                   </li>
-                  <li>
+                  <!-- <li>
                     <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                  </li>
+                  </li> -->
                   <li>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.youtube.com/@IICSIndiaorg"><i class="fa-brands fa-youtube"></i></a>
                   </li>
                 </ul>
               </div>
@@ -3255,11 +3288,11 @@ At IICS, student life is where the real world begins. <br>
             <div class="footer-links">
               <h3>quick links</h3>
               <ul>
-                <li><a href="index.html">Enquire Now</a></li>
-                <li><a href="about.html">Courses</a></li>
-                <li><a href="services.html">Admission</a></li>
-                <li><a href="contact.html">Life @ IICS</a></li>
-                <li><a href="contact.html">Creative Incubator</a></li>
+                <li><a href="contact.html">Enquire Now</a></li>
+                <li><a href="/#programs">Programs</a></li>
+                <li><a href="admission-process.html">Admission</a></li>
+                <li><a href="event.html">Life @ IICS</a></li>
+                <li><a href="faqs.html">Creative Incubator</a></li>
 
               </ul>
             </div>
@@ -3269,12 +3302,20 @@ At IICS, student life is where the real world begins. <br>
           <div class="col-lg-3 col-md-4 col-6">
             <!-- Footer Links Start -->
             <div class="footer-links">
-              <h3>support</h3>
+              <h3>Campus</h3>
               <ul>
-                <li><a href="#">help</a></li>
-                <li><a href="#">Condition</a></li>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Policy</a></li>
+                <li class="font-bold"><a href="/#campus">Delhi Campus
+                  <br>
+                  <span class="font-normal">13-A, 3rd Floor, Above Tata Motors Showroom, Main Ring Road, Lajpat Nagar-4, New Delhi- 110024</span>
+                </a></li>
+                <li class="font-bold"><a href="/#campus">Bhopal Campus
+                  <br>
+                  <span class="font-normal">Jagran Lakecity University,
+                    Mugaliyachap,
+                    Near Ratibad Bhopal –
+                    462044</span>
+                </a></li>
+               
               </ul>
             </div>
             <!-- Footer Links End -->
@@ -3283,12 +3324,19 @@ At IICS, student life is where the real world begins. <br>
           <div class="col-lg-3 col-md-4">
             <!-- Footer Links Start -->
             <div class="footer-links">
-              <h3>Services</h3>
+              <h3 class="invisible">Services</h3>
               <ul>
-                <li><a href="service-single.html">Talent Acquisition</a></li>
-                <li><a href="service-single.html">Workforce Planning</a></li>
-                <li><a href="service-single.html">Employee Training</a></li>
-                <li><a href="service-single.html">HR Compliance</a></li>
+                <li class="font-bold"><a href="/#campus">Chandigarh Campus
+                  <br>
+                  <span class="font-normal">CH Devi Lal Centre of Learning
+                    Plot No 5, Sec 28 B,
+                    Madhya Marg,
+                    Chandigarh, India</span>
+                </a></li>
+                <li class="font-bold"><a href="/#campus">Mumbai Campus
+                  <br>
+                  <span class="font-normal">Coming Soon</span>
+                </a></li>
               </ul>
             </div>
             <!-- Footer Links End -->
@@ -3305,7 +3353,8 @@ At IICS, student life is where the real world begins. <br>
                   <i class="fa-solid fa-phone"></i>
                 </div>
                 <div class="footer-contact-content">
-                  <p><a href="tel:+123465789">+91 123 465 789</a></p>
+                  <p><a href="tel:+123465789">+91 959-4949-959
+                  </a></p>
                 </div>
               </div>
               <!-- Footer Contact Item End -->
@@ -3317,21 +3366,14 @@ At IICS, student life is where the real world begins. <br>
                 </div>
                 <div class="footer-contact-content">
                   <p>
-                    <a href="mailto:info@domainname.com">info@domainname.com</a>
+                    <a href="mailto:info@domainname.com">info@iicsindia.org</a>
                   </p>
                 </div>
               </div>
               <!-- Footer Contact Item End -->
 
               <!-- Footer Contact Item Start -->
-              <div class="footer-contact-item">
-                <div class="icon-box">
-                  <i class="fa-solid fa-location-dot"></i>
-                </div>
-                <div class="footer-contact-content">
-                  <p>4140 Parker Rd. Allentown, New Mexico 31134</p>
-                </div>
-              </div>
+             
               <!-- Footer Contact Item End -->
             </div>
             <!-- Footer Links End -->
@@ -3357,6 +3399,36 @@ At IICS, student life is where the real world begins. <br>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
     <!-- Bootstrap js file -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+      const toggleBtn = document.getElementById('chatbot-toggle');
+      const overlay = document.getElementById('chatbot-overlay');
+      let isOpen = false;
+    
+      const openChatbot = () => {
+        overlay.classList.remove('hidden');
+        document.body.classList.add('overflow-hidden');
+        isOpen = true;
+      };
+    
+      const closeChatbot = () => {
+        overlay.classList.add('hidden');
+        document.body.classList.remove('overflow-hidden');
+        isOpen = false;
+      };
+    
+      toggleBtn.addEventListener('click', () => {
+        isOpen ? closeChatbot() : openChatbot();
+      });
+    
+      overlay.addEventListener('click', () => {
+        closeChatbot();
+      });
+    
+      // Prevent close when clicking inside chatbot box
+      document.getElementById('chatbot').addEventListener('click', (e) => {
+        e.stopPropagation();
+      });
+    </script>
     <!-- Validator js file -->
     <script src="js/validator.min.js"></script>
     <!-- SlickNav js file -->
@@ -3384,6 +3456,73 @@ At IICS, student life is where the real world begins. <br>
     <script src="js/wow.min.js"></script>
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
+    <script>
+      const coursesCertificate = [
+        {
+          title: "Hair, Makeup & Prosthetics",
+          image:
+            "images/IICS/iics_image/degree-course/hair-makeup-&-prosthetics.webp",
+          mentorName: "Dr. (Hon) Amit Behl",
+          mentorImage: "",
+          duration: "1-Year certificate",
+          courseType: "Certificate",
+          routeLink:'hair-makeup-and-prosthetics.html'
+        },
+        {
+          title: "Costume Designing",
+          image: "images/IICS/iics_image/degree-course/costume-designing.webp",
+          mentorName: "Ms. Yasmin Rodgers",
+          mentorImage: "images/IICS/iics_image/leaders/yasmin_rodgers.webp",
+          duration: "1-Year Certificate",
+          courseType: "Certificate",
+          routeLink:'costume-design.html'
+        },
+        {
+          title: "Journalism, PR, Image Strategization and Brand Custodianship",
+          image: "images/IICS/iics_image/degree-course/pr-&-jounalism.webp",
+          mentorName: "Padma Shri Dr. Resul Pookutty",
+          mentorImage: "images/IICS/iics_image/leaders/rasul.webp",
+          duration: "1-Year certificate",
+          courseType: "Certificate",
+          routeLink:'pr-journalism.html'
+        },
+      
+      
+      ];
+
+      const containerCertificate = document.getElementById("certificateContainer");
+
+      coursesCertificate.forEach((course) => {
+        const slide = document.createElement("div");
+        slide.className = "swiper-slide";
+        slide.innerHTML = `
+            <div>
+              <div class="pricing-item wow fadeInUp">
+                <div class="pricing-header !pb-[10px]">
+                  <img src="${course.image}" class="!max-w-full" alt="" />
+                  <h3 class="!font-extrabold">${course.title}</h3>
+
+                </div>
+                <div class="pricing-body">
+                  <p class="text-[18px] hidden">Chief Mentor</p>
+                  <p class="flex items-center gap-[20px] text-[16px] font-semibold hidden">
+                    <img src="${course.mentorImage}" alt="" class="w-[50px] h-[50px] rounded-[50%]" />
+                    <span class="font-extrabold text-[#000]">${course.mentorName}</span>
+                  </p>
+                  <ul>
+                    <li><span class="font-semibold">Duration</span> : ${course.duration}</li>
+                    <li><span class="font-semibold">Course Type</span> : ${course.courseType}</li>
+                  </ul>
+                </div>
+                <div class="pricing-footer ">
+                  <a href="${course.routeLink}" class="btn-default hover:!bg-[#ff4041] hover:!text-[#fff] before:!bg-transparent after:!bg-transparent  !bg-transparent border border-solid !border-[#ff4041] !text-[#ff4041]">Know More</a>
+                </div>
+              </div>
+            </div>
+          `;
+        containerCertificate.appendChild(slide);
+      });
+    </script>
     <script>
       const courses = [
         {
@@ -3423,42 +3562,7 @@ At IICS, student life is where the real world begins. <br>
           courseType: "Degree",
           routeLink:'bba-in-event-planning-&-management.html'
         },
-        // {
-        //   title: "Advance Gaming And Extended Reality (XR) Innovations",
-        //   image:
-        //     "images/IICS/iics_image/courseImage/advance-gaming-&-extented.jpg",
-        //   mentorName: "Mr. Anand Jha",
-        //   mentorImage: "images/IICS/iics_image/leaders/anand_jha.webp",
-        //   duration: "2 Years / 3 Years",
-        //   courseType: "Certificate Degree",
-        // },
-        // {
-        //   title:
-        //     "Journalism, PR, Image Strategization & Brand Custodianship Program",
-        //   image: "images/IICS/iics_image/courseImage/journalism-pr-image.jpg",
-        //   mentorName: "Dr. (Hon) Anusha Srinivasan Iyer",
-        //   mentorImage: "images/IICS/iics_image/leaders/anusha.webp",
-        //   duration: "2 Years / 3 Years",
-        //   courseType: "Certificate / Degree",
-        // },
-        // {
-        //   title: "Events And Experiential Media",
-        //   image:
-        //     "images/IICS/iics_image/courseImage/event-&-experitial-media.jpg",
-        //   mentorName: "Ms. Sushma Gaikwad",
-        //   mentorImage: "images/IICS/iics_image/leaders/susma.webp",
-        //   duration: "2 Years / 3 Years",
-        //   courseType: "Certificate / Degree",
-        // },
-        // {
-        //   title: "Digital Content Creation",
-        //   image:
-        //     "images/IICS/iics_image/courseImage/digital-content-creation.jpg",
-        //   mentorName: "Ms. Ketki Pandit",
-        //   mentorImage: "images/IICS/iics_image/leaders/ketki_pandit.webp",
-        //   duration: "2 Years / 3 Years",
-        //   courseType: "Certificate / Degree",
-        // },
+      
       ];
 
       const container = document.getElementById("courseContainer");
@@ -3816,5 +3920,6 @@ At IICS, student life is where the real world begins. <br>
         }
       }
     </script>
+    <script src="./js/chatbot.js"></script>
   </body>
 </html>
