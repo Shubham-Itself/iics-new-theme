@@ -33,11 +33,11 @@ const responses = [
     keywords: ["admission", "apply", "entrance", "fees", "support", "process"],
     response: `
       <p>Here is info about the admission process:</p>
-      <ul>
-        <li><a href="admission-process.html">How to Apply</a></li>
-        <li><a href="admission-process.html#eligibilityCriteria">Eligibility Criteria</a></li>
-        <li><a href="admission-process.html">Entrance Process</a></li>
-        // <li><a href="/fees&studentSupport">Fees & Support</a></li>
+      <ul class="text-[#fff]">
+        <li ><a href="admission-process.html" class="!text-[#000]">How to Apply</a></li>
+        <li ><a href="admission-process.html#eligibilityCriteria" class="!text-[#000]">Eligibility Criteria</a></li>
+        <li ><a href="admission-process.html" class="!text-[#000]">Entrance Process</a></li>
+        
       </ul>`
   },
   {
@@ -46,9 +46,9 @@ const responses = [
     response: `
       <p><strong>Design in Animation & Gaming</strong></p>
       <ul>
-        <li>✔ 12th grade pass from a recognized board</li>
-        <li>✔ Interest in 3D modeling, animation, game design</li>
-        <li>✔ No technical experience required</li>
+        <li class="!text-[#000]">✔ 12th grade pass from a recognized board</li>
+        <li class="!text-[#000]">✔ Interest in 3D modeling, animation, game design</li>
+        <li class="!text-[#000]">✔ No technical experience required</li>
       </ul>
     `
   },
@@ -58,9 +58,9 @@ const responses = [
     response: `
       <p><strong>Digital Content Creation & Media Management</strong></p>
       <ul>
-        <li>✔ 12th grade pass from a recognized board</li>
-        <li>✔ Interest in content, social media, storytelling</li>
-        <li>✔ Creative mindset, no prior experience needed</li>
+        <li class="!text-[#000]">✔ 12th grade pass from a recognized board</li>
+        <li class="!text-[#000]">✔ Interest in content, social media, storytelling</li>
+        <li class="!text-[#000]">✔ Creative mindset, no prior experience needed</li>
       </ul>
     `
   },
@@ -70,9 +70,9 @@ const responses = [
     response: `
       <p><strong>Sound Design & Music Video Production</strong></p>
       <ul>
-        <li>✔ 12th grade pass from a recognized board</li>
-        <li>✔ Interest in music, audio, sound design</li>
-        <li>✔ No prior training required</li>
+        <li class="!text-[#000]">✔ 12th grade pass from a recognized board</li>
+        <li class="!text-[#000]">✔ Interest in music, audio, sound design</li>
+        <li class="!text-[#000]">✔ No prior training required</li>
       </ul>
     `
   },
@@ -82,9 +82,9 @@ const responses = [
     response: `
       <p><strong>Event Planning & Management</strong></p>
       <ul>
-        <li>✔ 12th grade pass from a recognized board</li>
-        <li>✔ Interest in events, hospitality, entertainment</li>
-        <li>✔ No experience needed, just creativity & drive</li>
+        <li class="!text-[#000]">✔ 12th grade pass from a recognized board</li>
+        <li class="!text-[#000]">✔ Interest in events, hospitality, entertainment</li>
+        <li class="!text-[#000]">✔ No experience needed, just creativity & drive</li>
       </ul>
     `
   },
@@ -94,9 +94,9 @@ const responses = [
     response: `
       <p><strong>Hair, Makeup & Prosthetics</strong></p>
       <ul>
-        <li>✔ 12th grade pass from a recognized board</li>
-        <li>✔ Interest in beauty, special effects, transformation</li>
-        <li>✔ Creativity and steady hands, no training needed</li>
+        <li class="!text-[#000]">✔ 12th grade pass from a recognized board</li>
+        <li class="!text-[#000]">✔ Interest in beauty, special effects, transformation</li>
+        <li class="!text-[#000]">✔ Creativity and steady hands, no training needed</li>
       </ul>
     `
   },
@@ -106,9 +106,9 @@ const responses = [
     response: `
       <p><strong>Costume Designing</strong></p>
       <ul>
-        <li>✔ 12th grade pass from a recognized board</li>
-        <li>✔ Interest in fashion, character-driven design</li>
-        <li>✔ Passion for storytelling through fabric</li>
+        <li class="!text-[#000]">✔ 12th grade pass from a recognized board</li>
+        <li class="!text-[#000]">✔ Interest in fashion, character-driven design</li>
+        <li class="!text-[#000]">✔ Passion for storytelling through fabric</li>
       </ul>
     `
   },
@@ -118,9 +118,9 @@ const responses = [
     response: `
       <p><strong>PR & Journalism</strong></p>
       <ul>
-        <li>✔ 12th grade pass from a recognized board</li>
-        <li>✔ Interest in media, communication, storytelling</li>
-        <li>✔ No experience needed, just curiosity & passion</li>
+        <li class="!text-[#000]">✔ 12th grade pass from a recognized board</li>
+        <li class="!text-[#000]">✔ Interest in media, communication, storytelling</li>
+        <li class="!text-[#000]">✔ No experience needed, just curiosity & passion</li>
       </ul>
     `
   },
@@ -131,13 +131,13 @@ const responses = [
     response: `
       <p>Here's a list of all courses at IICS:</p>
       <ul>
-       <li><a href="bachelor-of-design-in-animation-&-gaming.html">Bachelor of Design in Animation & Gaming</a></li>
-<li><a href="bsc-in-digital-content-creation-&-media-production.html">B.Sc. in Digital Content Creation & Media Production</a></li>
-<li><a href="bsc-in-sound-design-&-music-video-production.html">B.Sc. in Sound Design & Music Video Production</a></li>
-<li><a href="bba-in-event-planning-&-management.html">BBA in Event Planning & Management</a></li>
-<li><a href="hair-makeup-and-prosthetics.html">Hair, Makeup & Prosthetics</a></li>
-<li><a href="costume-design.html">Costume Designing</a></li>
-<li><a href="pr-journalism.html">Journalism, PR, Image Strategization and Brand Custodianship</a></li>
+       <li><a href="bachelor-of-design-in-animation-&-gaming.html" class="!text-[#000]">Bachelor of Design in Animation & Gaming</a></li>
+<li><a href="bsc-in-digital-content-creation-&-media-production.html" class="!text-[#000]">B.Sc. in Digital Content Creation & Media Production</a></li>
+<li><a href="bsc-in-sound-design-&-music-video-production.html" class="!text-[#000]">B.Sc. in Sound Design & Music Video Production</a></li>
+<li><a href="bba-in-event-planning-&-management.html" class="!text-[#000]">BBA in Event Planning & Management</a></li>
+<li><a href="hair-makeup-and-prosthetics.html" class="!text-[#000]">Hair, Makeup & Prosthetics</a></li>
+<li><a href="costume-design.html" class="!text-[#000]">Costume Designing</a></li>
+<li><a href="pr-journalism.html" class="!text-[#000]">Journalism, PR, Image Strategization and Brand Custodianship</a></li>
       </ul>`
   },
   {
@@ -146,15 +146,15 @@ const responses = [
     response: `
       <p>Meet our top mentors:</p>
       <ul>
-        <li><a href="amit-behl.html">Dr. (Hon) Amit Behl</a></li>
-        <li><a href="yasmin-rodgers.html">Ms. Yasmin Rodgers</a></li>
-        <li><a href="resul-pookutty.html">Padma Shri Dr. Resul Pookutty</a></li>
-        <li><a href="manvendra-shukul.html">Mr. Manvendra Shukul</a></li>
-        <li><a href="anand-jha.html">Mr. Anand Jha</a></li>
-        <li><a href="anusha-srinivasan-iyer.html">Dr. (Hon) Anusha Srinivasan Iyer</a></li>
-        <li><a href="s-ramachandran.html">Dr. (Hon) S Ramachandran</a></li>
-        <li><a href="sushma-gaikwad.html">Ms. Sushma Gaikwad</a></li>
-        <li><a href="ketki-pandit.html">Ms. Ketki Pandit</a></li>
+        <li><a href="amit-behl.html" class="!text-[#000]">Dr. (Hon) Amit Behl</a></li>
+        <li><a href="yasmin-rodgers.html" class="!text-[#000]">Ms. Yasmin Rodgers</a></li>
+        <li><a href="resul-pookutty.html" class="!text-[#000]">Padma Shri Dr. Resul Pookutty</a></li>
+        <li><a href="manvendra-shukul.html" class="!text-[#000]">Mr. Manvendra Shukul</a></li>
+        <li><a href="anand-jha.html" class="!text-[#000]">Mr. Anand Jha</a></li>
+        <li><a href="anusha-srinivasan-iyer.html" class="!text-[#000]">Dr. (Hon) Anusha Srinivasan Iyer</a></li>
+        <li><a href="s-ramachandran.html" class="!text-[#000]">Dr. (Hon) S Ramachandran</a></li>
+        <li><a href="sushma-gaikwad.html" class="!text-[#000]">Ms. Sushma Gaikwad</a></li>
+        <li><a href="ketki-pandit.html" class="!text-[#000]">Ms. Ketki Pandit</a></li>
 
       </ul>`
   },
@@ -164,7 +164,7 @@ const responses = [
     response: `
       <p>We offer 7 career pathways:</p>
       <ul>
-        <li><a href="/#programs">Explore Career Outcomes</a></li>
+        <li><a href="/#programs" class="!text-[#000]">Explore Career Outcomes</a></li>
       </ul>`
   },
   {
@@ -172,21 +172,21 @@ const responses = [
     keywords: ["project", "live", "real world"],
     response: `
       <p>Learn through Live Projects:</p>
-      <a href="live-project.html">Watch Projects</a>`
+      <a href="live-project.html" class="!text-[#000]">Watch Projects</a>`
   },
   {
     key: "Industry Associations",
     keywords: ["industry", "partner", "association", "network"],
     response: `
       <p>We have strong industry associations.</p>
-      <a href="industry-assosiates.html">See Partners</a>`
+      <a href="industry-assosiates.html" class="!text-[#000]">See Partners</a>`
   },
   {
     key: "Apprenticeship",
     keywords: ["apprentice", "intern", "training"],
     response: `
       <p>Join our Apprenticeship Programs:</p>
-      <a href="apprenticeship.html">Learn More</a>`
+      <a href="apprenticeship.html"class="!text-[#000]">Learn More</a>`
   },
 ];
 
